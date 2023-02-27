@@ -1,21 +1,31 @@
 import logo from "./logo.svg";
 import "./App.css";
+import styles from "./index.css";
+import img from "./videos/splash.jpg";
+import vid from "./videos/bg.mp4";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Yoinks</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav className="text-white">
+        <a href="#">Bio</a>
+        <a href="#">Resume</a>
+        <a href="#">Media</a>
+      </nav>
+      <div className="w-200 h-200 fixed">
+        {/* <img
+          src={img}
+          className="max-h-100 max-w-100"
+          alt="dominique star website background"
+        /> */}
+        <video id="background-video" loop autoPlay muted>
+          <source src={vid} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div>
+        <h1>Dominique Star</h1>
+      </div>
     </div>
   );
 }
