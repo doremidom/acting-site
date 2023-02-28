@@ -61,10 +61,10 @@ function App() {
           onClick={() =>
             conceptRef.current.scrollIntoView({ behavior: "smooth" })
           }
-          bgColor="hover:border-green-600"
+          bgColor="hover:border-orange-600"
           onHover={setHoveredLink}
           hoveredLink={hoveredLink}
-          label="gallery"
+          label="voiceover"
         />
       </nav>
       <div className="w-200 h-200 fixed -z-10">
@@ -123,8 +123,98 @@ function App() {
           Download Resume
         </a>
       </div>
-      <div className="h-screen w-screen bg-black/95" ref={conceptRef}>
-        <div className="relative top-1/3 text-white">Coming Soon :)</div>
+      <div
+        className="h-screen w-screen bg-black/95 text-center pt-10"
+        ref={conceptRef}
+      >
+        <h2>THEATRICAL & MUSIC REEL</h2>
+
+        <iframe
+          className="m-auto mb-10"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Pmpls4-jzNg"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <br />
+        <div className="md:flex justify-center gap-12">
+          <div>
+            <h3>ACTING</h3>
+            <iframe
+              width="400"
+              className="m-auto"
+              height="200"
+              src="https://www.youtube.com/embed/sUmdYp4qSn0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <br />
+            <iframe
+              width="400"
+              className="m-auto"
+              height="200"
+              src="https://www.youtube.com/embed/ZYgrNwUBcR0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div>
+            <h3>MUSIC</h3>
+            <iframe
+              width="400"
+              height="200"
+              src="https://www.youtube.com/embed/2DygzyNLiE0"
+              title="YouTube video player"
+              className="m-auto"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <br />
+
+            <iframe
+              width="400"
+              height="200"
+              src="https://www.youtube.com/embed/3HV8pl1ERbo?start=271"
+              title="YouTube video player"
+              frameborder="0"
+              className="m-auto"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <br />
+          </div>
+        </div>
+        <div>
+          <h3>SOCIAL MEDIA</h3>
+          <a
+            href="https://www.instagram.com/doremidom/"
+            rel="noreferrer"
+            target="_blank"
+            className="underline"
+          >
+            Instagram
+          </a>
+          - 20k followers |{" "}
+          <a
+            href="https://www.instagram.com/doremidom/"
+            rel="noreferrer"
+            target="_blank"
+            className="underline"
+          >
+            Youtube
+          </a>
+          - 1.1k followers
+        </div>
       </div>
     </div>
   );
