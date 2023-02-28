@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import styles from "./index.css";
 import vid from "./videos/bg.mp4";
+import still from "./videos/bg.jpg";
 import NavItem from "./NavItem";
 import React, { useRef, useState } from "react";
 
@@ -14,6 +15,18 @@ function App() {
 
   return (
     <div className="App">
+      <video
+        id="bg-video"
+        loop
+        autoPlay
+        muted
+        playsinline
+        className="fixed"
+        poster={still}
+      >
+        <source src={vid} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <nav
         className={`w-screen h-10 md:hover:h-10 flex fixed top-0 z-30  transition-[height] duration-200 overflow-hidden`}
       >
@@ -60,16 +73,12 @@ function App() {
           className="max-h-100 max-w-100"
           alt="dominique star website background"
         /> */}
-        <video id="background-video" loop autoPlay muted className="fixed">
-          <source src={vid} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
       </div>
       <div className="w-screen h-screen m-auto text-center uppercase text-white">
         <div className="relative top-1/3 ">
-          <h1>Dominique Star</h1>
+          <p className="text-5xl md:text-[96px]">Dominique Star</p>
 
-          <h2>Actor, Singer, Musician</h2>
+          <p className="text-xl md:text-2xl">Actor, Singer, Musician</p>
         </div>
       </div>
       <div className="relative h-screen w-screen bg-black/95" ref={synopsisRef}>
