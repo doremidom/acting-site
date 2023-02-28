@@ -100,31 +100,26 @@ function App() {
         className="h-screen w-screen bg-black/95 pt-10 text-white"
         ref={musicRef}
       >
-        <iframe
-          className="m-auto mb-10"
-          src="https://drive.google.com/file/d/1gLynsLkuVIZpZWK2QtXW2fcmWoaD9qtE/preview"
-          width="640"
-          height="800"
-          allow="autoplay"
-          title="Dominique Star's Acting Resume"
-        ></iframe>
+        <div className="lg:w-1/2 h-[650px] md:h-[850px] m-auto mb-10 xl:h-[1000px]">
+          <iframe
+            className="m-auto mb-10 w-full h-full"
+            src="https://drive.google.com/file/d/1gLynsLkuVIZpZWK2QtXW2fcmWoaD9qtE/preview"
+            allow="autoplay"
+            title="Dominique Star's Acting Resume"
+          ></iframe>
+        </div>
         <a
-          className="p-2 bg-purple-600 border mt-10 border-white"
+          className="p-2 bg-purple-600 border border-white"
           href="https://drive.google.com/uc?export=download&id=1gLynsLkuVIZpZWK2QtXW2fcmWoaD9qtE"
         >
           Download Resume
         </a>
       </div>
-      <div
-        className="h-screen w-screen bg-black/95 text-center pt-10"
-        ref={conceptRef}
-      >
+      <div className="w-screen bg-black/95 text-center py-10" ref={conceptRef}>
         <h2>THEATRICAL & MUSIC REEL</h2>
 
         <iframe
-          className="m-auto mb-10"
-          width="560"
-          height="315"
+          className="m-auto mb-10 w-full md:w-1/2 h-[315px] max-w-[600px]"
           src="https://www.youtube.com/embed/Pmpls4-jzNg"
           title="YouTube video player"
           frameBorder="0"
@@ -186,7 +181,7 @@ function App() {
             <br />
           </div>
         </div>
-        <div>
+        <div className="pb-10">
           <h3>SOCIAL MEDIA</h3>
           <a
             href="https://www.instagram.com/doremidom/"
