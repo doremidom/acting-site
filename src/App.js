@@ -67,10 +67,13 @@ function App() {
         /> */}
       </div>
       <div className="w-screen h-screen m-auto text-center uppercase text-white">
-        <div className="relative top-1/3 ">
-          <p className="text-5xl md:text-[96px]">Dominique Star</p>
-
-          <p className="text-xl md:text-2xl">Actor, Singer, Musician</p>
+        <div className="w-full h-full bg-black/50">
+          <div className="relative top-1/3">
+            <div className="text-5xl relative top-1/3  md:text-[96px]">
+              Dominique Star
+            </div>
+            <div className="text-xl md:text-2xl">Actor, Singer, Musician</div>
+          </div>
         </div>
       </div>
       <div className="relative h-screen w-screen bg-black/95" ref={synopsisRef}>
@@ -97,7 +100,7 @@ function App() {
         </div>
       </div>
       <div
-        className="h-screen w-screen bg-black/95 pt-10 text-white"
+        className="h-screen w-screen bg-black/95 pt-10 text-white pb-10"
         ref={musicRef}
       >
         <div className="lg:w-1/2 h-[650px] md:h-[850px] m-auto mb-10 xl:h-[1000px]">
@@ -109,13 +112,16 @@ function App() {
           ></iframe>
         </div>
         <a
-          className="p-2 bg-purple-600 border border-white"
+          className="p-2 bg-purple-600 border border-white mb"
           href="https://drive.google.com/uc?export=download&id=1gLynsLkuVIZpZWK2QtXW2fcmWoaD9qtE"
         >
           Download Resume
         </a>
       </div>
-      <div className="w-screen bg-black/95 text-center py-10" ref={conceptRef}>
+      <div
+        className="w-screen bg-black/95 text-center py-10 pt-44"
+        ref={conceptRef}
+      >
         <h2>THEATRICAL & MUSIC REEL</h2>
 
         <iframe
@@ -132,9 +138,7 @@ function App() {
           <div>
             <h3>ACTING</h3>
             <iframe
-              width="400"
-              className="m-auto"
-              height="200"
+              className="m-auto max-w-[400px] w-full h-[200px]"
               src="https://www.youtube.com/embed/sUmdYp4qSn0"
               title="YouTube video player"
               frameBorder="0"
@@ -143,9 +147,7 @@ function App() {
             ></iframe>
             <br />
             <iframe
-              width="400"
-              className="m-auto"
-              height="200"
+              className="m-auto max-w-[400px] w-full h-[200px]"
               src="https://www.youtube.com/embed/ZYgrNwUBcR0"
               title="YouTube video player"
               frameBorder="0"
