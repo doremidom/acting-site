@@ -15,15 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <video
-        id="bg-video"
-        loop
-        autoPlay
-        muted
-        playsInline
-        className="fixed"
-        poster={still}
-      >
+      <video id="bg-video" loop autoPlay muted playsInline poster={still}>
         <source src={vid} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -108,18 +100,20 @@ function App() {
         className="h-screen w-screen bg-black/95 pt-10 text-white"
         ref={musicRef}
       >
+        <iframe
+          className="m-auto mb-10"
+          src="https://drive.google.com/file/d/1gLynsLkuVIZpZWK2QtXW2fcmWoaD9qtE/preview"
+          width="640"
+          height="800"
+          allow="autoplay"
+          title="Dominique Star's Acting Resume"
+        ></iframe>
         <a
-          href="https://www.dropbox.com/s/x3z3t9c2fr30vtv/a_resume.pdf?dl=0"
-          className="dropbox-embed"
-          data-height="300px"
-          data-width="600px"
-        />
-        {/* <a
-          className="p-2 bg-purple-600 border border-white"
+          className="p-2 bg-purple-600 border mt-10 border-white"
           href="https://drive.google.com/uc?export=download&id=1gLynsLkuVIZpZWK2QtXW2fcmWoaD9qtE"
         >
           Download Resume
-        </a> */}
+        </a>
       </div>
       <div
         className="h-screen w-screen bg-black/95 text-center pt-10"
