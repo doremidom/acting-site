@@ -20,7 +20,7 @@ function App() {
         loop
         autoPlay
         muted
-        playsinline
+        playsInline
         className="fixed"
         poster={still}
       >
@@ -86,8 +86,8 @@ function App() {
           <p>
             Dominique Star is an actor, singer, and multi-instrumentalist from
             Rhode Island. She attended Columbia University and spent several
-            years as a musician in NYC before moving to LA. She's drawn to
-            free-spirited, sarcastic, edgy, artsy characters.
+            years as a musician in NYC and Paris before moving to LA. She's
+            drawn to free-spirited, sarcastic, edgy, artsy characters.
           </p>
 
           <p className="mt-4">
@@ -108,20 +108,18 @@ function App() {
         className="h-screen w-screen bg-black/95 pt-10 text-white"
         ref={musicRef}
       >
-        <iframe
-          className="m-auto"
-          src="https://drive.google.com/file/d/1gLynsLkuVIZpZWK2QtXW2fcmWoaD9qtE/preview"
-          width="640"
-          height="800"
-          allow="autoplay"
-          title="Dominique Star's Acting Resume"
-        ></iframe>
         <a
+          href="https://www.dropbox.com/s/x3z3t9c2fr30vtv/a_resume.pdf?dl=0"
+          className="dropbox-embed"
+          data-height="300px"
+          data-width="600px"
+        />
+        {/* <a
           className="p-2 bg-purple-600 border border-white"
           href="https://drive.google.com/uc?export=download&id=1gLynsLkuVIZpZWK2QtXW2fcmWoaD9qtE"
         >
           Download Resume
-        </a>
+        </a> */}
       </div>
       <div
         className="h-screen w-screen bg-black/95 text-center pt-10"
@@ -135,9 +133,9 @@ function App() {
           height="315"
           src="https://www.youtube.com/embed/Pmpls4-jzNg"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
 
         <br />
@@ -150,9 +148,9 @@ function App() {
               height="200"
               src="https://www.youtube.com/embed/sUmdYp4qSn0"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
             <br />
             <iframe
@@ -161,9 +159,9 @@ function App() {
               height="200"
               src="https://www.youtube.com/embed/ZYgrNwUBcR0"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
 
@@ -175,9 +173,9 @@ function App() {
               src="https://www.youtube.com/embed/2DygzyNLiE0"
               title="YouTube video player"
               className="m-auto"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
             <br />
 
@@ -186,10 +184,10 @@ function App() {
               height="200"
               src="https://www.youtube.com/embed/3HV8pl1ERbo?start=271"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               className="m-auto"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
             <br />
           </div>
