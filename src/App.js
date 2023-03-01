@@ -159,11 +159,9 @@ function App() {
           <div>
             <h3>MUSIC</h3>
             <iframe
-              width="400"
-              height="200"
               src="https://www.youtube.com/embed/2DygzyNLiE0"
               title="YouTube video player"
-              className="m-auto"
+              className="m-auto max-w-[400px] w-full h-[200px]"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
@@ -171,12 +169,10 @@ function App() {
             <br />
 
             <iframe
-              width="400"
-              height="200"
               src="https://www.youtube.com/embed/3HV8pl1ERbo?start=271"
               title="YouTube video player"
               frameBorder="0"
-              className="m-auto"
+              className="m-auto max-w-[400px] w-full h-[200px]"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
