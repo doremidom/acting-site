@@ -6,7 +6,7 @@ export default function NavItem(props) {
       onClick={() => onClick()}
       onMouseEnter={() => onHover(label)}
       onMouseLeave={() => onHover("")}
-      className={`${bgColor} border-b w-full uppercase bg-black/90 pl-4 h-full duration-200 font-sans text-white text-right pr-4 `}
+      className={`${bgColor} border-b border-black w-full uppercase bg-black/90 pl-4 h-full duration-200 font-sans text-white text-right pr-4 `}
     >
       {label}
     </button>
