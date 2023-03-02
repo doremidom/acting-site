@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import styles from "./index.css";
-import vid from "./videos/bg.mp4";
+import vid from "./videos/bg_med.mp4";
 import still from "./videos/bg.jpg";
 import NavItem from "./NavItem";
 import React, { useRef, useState } from "react";
@@ -59,13 +59,6 @@ function App() {
           label="voiceover"
         />
       </nav>
-      <div className="w-200 h-200 fixed -z-10">
-        {/* <img
-          src={img}
-          className="max-h-100 max-w-100"
-          alt="dominique star website background"
-        /> */}
-      </div>
       <div className="w-screen h-screen m-auto text-center uppercase text-white">
         <div className="w-full h-full bg-black/50">
           <div className="relative top-1/3">
@@ -76,34 +69,45 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="relative h-screen w-screen bg-black/95" ref={synopsisRef}>
-        <div className="text-white text-left m-auto max-w-[600px] relative top-1/3 bg-black p-4">
-          <p>
-            Dominique Star is an actor, singer, and multi-instrumentalist from
-            Rhode Island. She attended Columbia University and spent several
-            years as a musician in NYC and Paris before moving to LA. She's
-            drawn to free-spirited, sarcastic, edgy, artsy characters.
-          </p>
+      <div className="relative  w-screen bg-black/95" ref={synopsisRef}>
+        <div className="text-white text-left m-auto w-full md:flex relative top-1/3 bg-black p-4">
+          <div className="items-center justify-center md:flex flex-col ">
+            <img
+              src="DominiqueStarHeadshot.jpg"
+              alt="Dominique Star Headshot"
+            />
+          </div>
+          <div className="items-center justify-center md:flex flex-col p-8">
+            <p>
+              Dominique Star is an actor, singer, and multi-instrumentalist from
+              Rhode Island. She attended Columbia University and spent several
+              years as a musician in NYC and Paris before moving to LA. She's
+              drawn to free-spirited, sarcastic, edgy, artsy characters.
+            </p>
 
-          <p className="mt-4">
-            As a musician, she's sung on stage with MIKA, has played guitar and
-            piano since the age of 14, and has had her music featured in network
-            and streaming series across the globe.
-          </p>
+            <p className="mt-4">
+              As a musician, she's sung on stage with MIKA, has played guitar
+              and piano since the age of 14, and has had her music featured in
+              network and streaming series across the globe.
+            </p>
 
-          <p className="mt-4">
-            As an actor, her work on Jay Shetty's webseries has been viewed
-            millions of times across social media, and her voiceover career has
-            spanned from national commercials to award winning video games such
-            as Yi and the Thousand Moons.
-          </p>
+            <p className="mt-4">
+              As an actor, her work on Jay Shetty's webseries has been viewed
+              millions of times across social media, and her voiceover career
+              has spanned from national commercials to award winning video games
+              such as Yi and the Thousand Moons.
+            </p>
+            <p className="mt-4">
+              PS, she knows how to code & built this website :)
+            </p>
+          </div>
         </div>
       </div>
       <div
-        className="h-screen w-screen bg-black/95 pt-10 text-white pb-10"
+        className="w-screen h-screen bg-black/95 pt-10 text-white pb-10"
         ref={musicRef}
       >
-        <div className="lg:w-1/2 h-[650px] md:h-[850px] m-auto mb-10 xl:h-[1000px]">
+        <div className="lg:w-1/2 m-auto h-full mb-10">
           <iframe
             className="m-auto mb-10 w-full h-full"
             src="https://drive.google.com/file/d/1gLynsLkuVIZpZWK2QtXW2fcmWoaD9qtE/preview"
