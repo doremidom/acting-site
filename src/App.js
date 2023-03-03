@@ -106,23 +106,23 @@ function App() {
               than playing the game. Theatre ended up being the better fit.
             </p>
             <p>
-              She attended Columbia University, majoring in French Literature,
-              and spent several years as a musician in NYC and Paris before
-              moving to LA.
+              She attended Columbia University (French Literature), and spent
+              several years as a musician in NYC and Paris before moving to LA.
             </p>
 
             <p className="mt-4">
-              As a musician, she's sung on stage with MIKA, plays guitar, piano,
-              and ukulele, and has had her music featured in network and
-              streaming series across the globe.
+              As a musician, she's sung with MIKA and Macy Gray, plays guitar,
+              piano, and ukulele, and has had her music featured in network and
+              streaming series.
             </p>
 
             <p className="mt-4">
               As an actor, her work on Jay Shetty's webseries has been viewed
-              millions of times across social media, and her voiceover career
-              has spanned from national commercials to award winning video games
-              such as Yi and the Thousand Moons.
+              millions of times, and her voiceover career has spanned from
+              national commercials to award winning video games such as Yi and
+              the Thousand Moons.
             </p>
+            <p>Go to karaoke song: Sunday Morning by Maroon 5</p>
             <p className="mt-4">
               PS, she knows how to code & built this website :)
             </p>
@@ -233,7 +233,7 @@ function App() {
       </div>
       <div className="relative w-screen bg-black/95 pb-10" ref={photoRef}>
         <h2>Headshots</h2>
-        <div className="flex mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 mb-8">
           <div>
             <img
               src="DominiqueStarHeadshot2.jpg"
@@ -254,7 +254,7 @@ function App() {
           </div>
         </div>
         <h2>Project Stills</h2>
-        <div className="grid-cols-3 grid">
+        <div className="grid-cols-2 md:grid-cols-3 grid">
           <div>
             <img
               src="DominiqueStarStillJayShetty.jpg"
@@ -262,13 +262,14 @@ function App() {
             />
           </div>
           <div>
+            <img src="splash.jpg" alt="Dominique Star in Perchance to Dream" />
+          </div>
+
+          <div>
             <img
               src="DominiqueStarStillJayShetty2.jpg"
               alt="Dominique Star in The Accident"
             />
-          </div>
-          <div>
-            <img src="splash.jpg" alt="Dominique Star in Perchance to Dream" />
           </div>
           <div>
             <img
