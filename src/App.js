@@ -6,12 +6,7 @@ import mobile_vid from "./videos/bg_mobile.mp4";
 import still from "./videos/bg.jpg";
 import NavItem from "./NavItem";
 import React, { useRef, useState } from "react";
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-} from "react-device-detect";
+import { BrowserView, MobileView } from "react-device-detect";
 
 function App() {
   const musicRef = useRef();
