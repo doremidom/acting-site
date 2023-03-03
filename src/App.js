@@ -1,7 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
 import styles from "./index.css";
-import vid from "./videos/bg_med.mp4";
+import vid from "./videos/bg_desktop.mp4";
+import mobile_vid from "./videos/bg_mobile.mp4";
 import still from "./videos/bg.jpg";
 import NavItem from "./NavItem";
 import React, { useRef, useState } from "react";
@@ -17,17 +18,29 @@ function App() {
 
   const [hoveredLink, setHoveredLink] = useState("");
 
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-  };
-
   return (
     <div className="App">
-      <video id="bg-video" loop autoPlay muted playsInline poster={still}>
+      <video
+        className="md:hidden"
+        id="bg-video"
+        loop
+        autoPlay
+        muted
+        playsInline
+        poster={still}
+      >
+        <source src={mobile_vid} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video
+        className="hidden md:block"
+        id="bg-video"
+        loop
+        autoPlay
+        muted
+        playsInline
+        poster={still}
+      >
         <source src={vid} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -119,10 +132,9 @@ function App() {
             <p className="mt-4">
               As an actor, her work on Jay Shetty's webseries has been viewed
               millions of times, and her voiceover career has spanned from
-              national commercials to award winning video games such as Yi and
-              the Thousand Moons.
+              national commercials to award winning video games.
             </p>
-            <p>Go to karaoke song: Sunday Morning by Maroon 5</p>
+
             <p className="mt-4">
               PS, she knows how to code & built this website :)
             </p>
