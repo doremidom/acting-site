@@ -6,7 +6,12 @@ import mobile_vid from "./videos/bg_mobile.mp4";
 import still from "./videos/bg.jpg";
 import NavItem from "./NavItem";
 import React, { useRef, useState } from "react";
-import Slider from "react-slick";
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile,
+} from "react-device-detect";
 
 function App() {
   const musicRef = useRef();
@@ -20,30 +25,19 @@ function App() {
 
   return (
     <div className="App">
-      <video
-        className="md:hidden"
-        id="bg-video"
-        loop
-        autoPlay
-        muted
-        playsInline
-        poster={still}
-      >
-        <source src={mobile_vid} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <video
-        className="hidden md:block"
-        id="bg-video"
-        loop
-        autoPlay
-        muted
-        playsInline
-        poster={still}
-      >
-        <source src={vid} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <BrowserView>
+        <video id="bg-video" loop autoPlay muted playsInline poster={still}>
+          <source src={vid} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </BrowserView>
+      <MobileView>
+        <video id="bg-video" loop autoPlay muted playsInline poster={still}>
+          <source src={mobile_vid} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </MobileView>
+
       <nav
         className={`w-screen h-10 md:hover:h-10 flex fixed top-0 z-30 transition-[height] duration-200 overflow-hidden`}
       >
@@ -107,7 +101,7 @@ function App() {
         <div className="text-white text-left m-auto w-full md:flex relative top-1/3 bg-black p-4">
           <div className="items-center justify-center md:flex flex-col ">
             <img
-              src="DominiqueStarHeadshot.jpg"
+              src="DominiqueStarHeadshot.jpg?v=2"
               alt="Dominique Star Headshot"
             />
           </div>
@@ -254,7 +248,7 @@ function App() {
           </div>
           <div>
             <img
-              src="DominiqueStarHeadshot.jpg"
+              src="DominiqueStarHeadshot.jpg?v=2"
               alt="Dominique Star Headshot"
             />
           </div>
