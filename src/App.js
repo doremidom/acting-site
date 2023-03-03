@@ -5,15 +5,25 @@ import vid from "./videos/bg_med.mp4";
 import still from "./videos/bg.jpg";
 import NavItem from "./NavItem";
 import React, { useRef, useState } from "react";
+import Slider from "react-slick";
 
 function App() {
   const musicRef = useRef();
   const conceptRef = useRef();
   const synopsisRef = useRef();
   const voRef = useRef();
+  const photoRef = useRef();
   const contactRef = useRef();
 
   const [hoveredLink, setHoveredLink] = useState("");
+
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
 
   return (
     <div className="App">
@@ -53,6 +63,15 @@ function App() {
         />
         <NavItem
           onClick={() =>
+            photoRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          bgColor="hover:border-green-600"
+          onHover={setHoveredLink}
+          hoveredLink={hoveredLink}
+          label="photos"
+        />
+        <NavItem
+          onClick={() =>
             contactRef.current.scrollIntoView({ behavior: "smooth" })
           }
           bgColor="hover:border-orange-600"
@@ -79,17 +98,23 @@ function App() {
               alt="Dominique Star Headshot"
             />
           </div>
-          <div className="items-center justify-center md:flex flex-col p-8">
+          <div className="items-center justify-center md:flex flex-col p-12 space-y-4">
             <p>
               Dominique Star is an actor, singer, and multi-instrumentalist from
-              Rhode Island. She attended Columbia University and spent several
-              years as a musician in NYC and Paris before moving to LA.
+              Rhode Island. She began performing around age 6, when her mother
+              saw she spent her soccer matches dancing on the sidelines rather
+              than playing the game. Theatre ended up being the better fit.
+            </p>
+            <p>
+              She attended Columbia University, majoring in French Literature,
+              and spent several years as a musician in NYC and Paris before
+              moving to LA.
             </p>
 
             <p className="mt-4">
-              As a musician, she's sung on stage with MIKA, has played guitar,
-              ukulele, and piano since the age of 14, and has had her music
-              featured in network and streaming series across the globe.
+              As a musician, she's sung on stage with MIKA, plays guitar, piano,
+              and ukulele, and has had her music featured in network and
+              streaming series across the globe.
             </p>
 
             <p className="mt-4">
@@ -105,10 +130,10 @@ function App() {
         </div>
       </div>
       <div
-        className="w-screen h-screen bg-black/95 pt-10 text-white pb-10"
+        className="w-screen h-screen bg-black/95 pt-10 text-white md:pb-10"
         ref={musicRef}
       >
-        <div className="lg:w-1/2 m-auto h-full mb-10">
+        <div className="lg:w-1/2 m-auto h-2/3 md:h-screen lg:h-full mb-10">
           <iframe
             className="m-auto mb-10 w-full h-full"
             src="https://drive.google.com/file/d/1gLynsLkuVIZpZWK2QtXW2fcmWoaD9qtE/preview"
@@ -124,7 +149,7 @@ function App() {
         </a>
       </div>
       <div
-        className="w-screen bg-black/95 text-center py-10 pt-44"
+        className="w-screen bg-black/95 text-center md:py-10 md:pt-44"
         ref={conceptRef}
       >
         <h2>THEATRICAL & MUSIC REEL</h2>
@@ -206,6 +231,65 @@ function App() {
           allowFullScreen
         ></iframe>
       </div>
+      <div className="relative w-screen bg-black/95 pb-10" ref={photoRef}>
+        <h2>Headshots</h2>
+        <div className="flex mb-8">
+          <div>
+            <img
+              src="DominiqueStarHeadshot2.jpg"
+              alt="Dominique Star Headshot"
+            />
+          </div>
+          <div>
+            <img
+              src="DominiqueStarHeadshot.jpg"
+              alt="Dominique Star Headshot"
+            />
+          </div>
+          <div>
+            <img
+              src="DominiqueStarHeadshot3.jpeg"
+              alt="Dominique Star Headshot"
+            />
+          </div>
+        </div>
+        <h2>Project Stills</h2>
+        <div className="grid-cols-3 grid">
+          <div>
+            <img
+              src="DominiqueStarStillJayShetty.jpg"
+              alt="Dominique Star in Red Flags"
+            />
+          </div>
+          <div>
+            <img
+              src="DominiqueStarStillJayShetty2.jpg"
+              alt="Dominique Star in The Accident"
+            />
+          </div>
+          <div>
+            <img src="splash.jpg" alt="Dominique Star in Perchance to Dream" />
+          </div>
+          <div>
+            <img
+              src="DominiqueStarStillSymphony.png"
+              alt="Dominique Star in Symphony"
+            />
+          </div>
+          <div>
+            <img
+              src="DominiqueStarStillJayShetty3.jpg"
+              alt="Dominique Star in The Accident"
+            />
+          </div>
+          <div>
+            <img
+              src="DominiqueStarStillJayShetty4.png"
+              alt="Dominique Star in Red Flags"
+            />
+          </div>
+        </div>
+      </div>
 
       <div className="relative w-screen bg-black/95 pb-10" ref={contactRef}>
         <h2 className="mb-4">Contact </h2>
@@ -215,6 +299,24 @@ function App() {
             Email:{" "}
             <a className="underline" href="mailto:info@dominiquestar.com">
               info@dominiquestar.com
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://www.imdb.com/name/nm11311565/?ref_=ext_shr_lnk"
+              rel="noreferrer"
+              target="_blank"
+              className="underline"
+            >
+              IMDB
+            </a>{" "}
+            <a
+              href="https://resumes.actorsaccess.com/dominiquestar"
+              rel="noreferrer"
+              target="_blank"
+              className="underline"
+            >
+              Actors Access
             </a>
           </p>
           <p>
