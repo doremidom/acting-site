@@ -1,6 +1,5 @@
 import logo from "./logo.svg";
 import "./App.css";
-import styles from "./index.css";
 import vid from "./videos/bg_desktop.mp4";
 import mobile_vid from "./videos/bg_mobile.mp4";
 import still from "./videos/bg.jpg";
@@ -100,12 +99,10 @@ function App() {
               alt="Dominique Star Headshot"
             />
           </div>
-          <div className="items-center justify-center md:flex flex-col p-12 space-y-4">
+          <div className="items-center justify-center md:flex flex-col p-8 md:p-12 space-y-4">
             <p>
               Dominique Star is an actor, singer, and multi-instrumentalist from
-              Rhode Island. She began performing around age 6, when her mother
-              saw she spent her soccer matches dancing on the sidelines rather
-              than playing the game. Theatre ended up being the better fit.
+              Rhode Island.
             </p>
             <p>
               She attended Columbia University (French Literature), and spent
@@ -113,15 +110,15 @@ function App() {
             </p>
 
             <p className="mt-4">
-              As a musician, she's sung with MIKA and Macy Gray, plays guitar,
-              piano, and ukulele, and has had her music featured in network and
-              streaming series.
-            </p>
-
-            <p className="mt-4">
               As an actor, her work on Jay Shetty's webseries has been viewed
               millions of times, and her voiceover career has spanned from
               national commercials to award winning video games.
+            </p>
+
+            <p className="mt-4">
+              As a musician, she's sung with MIKA and Macy Gray, plays guitar,
+              piano, and ukulele, and has had her music featured in network and
+              streaming series.
             </p>
 
             <p className="mt-4">
@@ -213,12 +210,12 @@ function App() {
       </div>
       <div className="relative w-screen bg-black/95 pb-10" ref={voRef}>
         <h2 className="mb-4">Voiceover </h2>
-        <p className="w-1/2 m-auto mb-8">
+        <p className="md:w-1/2 m-auto mb-8 p-4">
           Dominique has quickly established a name for herself in the voiceover
           world with her warm, authentic, grounded voice.
         </p>
 
-        <p className="w-1/2 m-auto mb-8">
+        <p className=" p-4 md:w-1/2 m-auto mb-8">
           Select clients include Meta, the NFL, and Verizon.
         </p>
 
