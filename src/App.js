@@ -10,6 +10,8 @@ function App() {
   const musicRef = useRef();
   const conceptRef = useRef();
   const synopsisRef = useRef();
+  const voRef = useRef();
+  const contactRef = useRef();
 
   const [hoveredLink, setHoveredLink] = useState("");
 
@@ -20,7 +22,7 @@ function App() {
         Your browser does not support the video tag.
       </video>
       <nav
-        className={`w-screen h-10 md:hover:h-10 flex fixed top-0 z-30  transition-[height] duration-200 overflow-hidden`}
+        className={`w-screen h-10 md:hover:h-10 flex fixed top-0 z-30 transition-[height] duration-200 overflow-hidden`}
       >
         <NavItem
           onClick={() =>
@@ -51,12 +53,12 @@ function App() {
         />
         <NavItem
           onClick={() =>
-            conceptRef.current.scrollIntoView({ behavior: "smooth" })
+            contactRef.current.scrollIntoView({ behavior: "smooth" })
           }
           bgColor="hover:border-orange-600"
           onHover={setHoveredLink}
           hoveredLink={hoveredLink}
-          label="voiceover"
+          label="contact"
         />
       </nav>
       <div className="w-screen h-screen m-auto text-center uppercase text-white">
@@ -81,14 +83,13 @@ function App() {
             <p>
               Dominique Star is an actor, singer, and multi-instrumentalist from
               Rhode Island. She attended Columbia University and spent several
-              years as a musician in NYC and Paris before moving to LA. She's
-              drawn to free-spirited, sarcastic, edgy, artsy characters.
+              years as a musician in NYC and Paris before moving to LA.
             </p>
 
             <p className="mt-4">
-              As a musician, she's sung on stage with MIKA, has played guitar
-              and piano since the age of 14, and has had her music featured in
-              network and streaming series across the globe.
+              As a musician, she's sung on stage with MIKA, has played guitar,
+              ukulele, and piano since the age of 14, and has had her music
+              featured in network and streaming series across the globe.
             </p>
 
             <p className="mt-4">
@@ -116,7 +117,7 @@ function App() {
           ></iframe>
         </div>
         <a
-          className="p-2 bg-purple-600 border border-white mb"
+          className="p-2 text-purple-400 hover:text-white border border-purple-400 mb"
           href="https://drive.google.com/uc?export=download&id=1gLynsLkuVIZpZWK2QtXW2fcmWoaD9qtE"
         >
           Download Resume
@@ -183,26 +184,60 @@ function App() {
             <br />
           </div>
         </div>
-        <div className="pb-10">
-          <h3>SOCIAL MEDIA</h3>
-          <a
-            href="https://www.instagram.com/doremidom/"
-            rel="noreferrer"
-            target="_blank"
-            className="underline"
-          >
-            Instagram
-          </a>
-          - 20k followers |{" "}
-          <a
-            href="https://www.instagram.com/doremidom/"
-            rel="noreferrer"
-            target="_blank"
-            className="underline"
-          >
-            Youtube
-          </a>
-          - 1.1k followers
+      </div>
+      <div className="relative w-screen bg-black/95 pb-10" ref={voRef}>
+        <h2 className="mb-4">Voiceover </h2>
+        <p className="w-1/2 m-auto mb-8">
+          Dominique has quickly established a name for herself in the voiceover
+          world with her warm, authentic, grounded voice.
+        </p>
+
+        <p className="w-1/2 m-auto mb-8">
+          Select clients include Meta, the NFL, and Verizon.
+        </p>
+
+        <iframe
+          src="https://www.youtube.com/embed/zE6_WCo4BHs
+"
+          title="YouTube video player"
+          frameBorder="0"
+          className="m-auto max-w-[400px] w-full h-[200px]"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </div>
+
+      <div className="relative w-screen bg-black/95 pb-10" ref={contactRef}>
+        <h2 className="mb-4">Contact </h2>
+
+        <div className="pb-10 space-y-2">
+          <p>
+            Email:{" "}
+            <a className="underline" href="mailto:info@dominiquestar.com">
+              info@dominiquestar.com
+            </a>
+          </p>
+          <p>
+            Social:{" "}
+            <a
+              href="https://www.instagram.com/doremidom/"
+              rel="noreferrer"
+              target="_blank"
+              className="underline"
+            >
+              Instagram
+            </a>
+            - 20k followers |{" "}
+            <a
+              href="https://www.youtube.com/dominiquestar"
+              rel="noreferrer"
+              target="_blank"
+              className="underline"
+            >
+              Youtube
+            </a>
+            - 1.1k followers
+          </p>
         </div>
       </div>
     </div>
