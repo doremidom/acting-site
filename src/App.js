@@ -102,28 +102,20 @@ function App() {
           <div className="items-center justify-center md:flex flex-col p-8 md:p-12 space-y-4">
             <p>
               Dominique Star is an actor, singer, and multi-instrumentalist from
-              Rhode Island.
+              Rhode Island. She attended Columbia University (French
+              Literature), and spent several years as a musician in NYC and
+              Paris before moving to LA.
             </p>
             <p>
-              She attended Columbia University (French Literature), and spent
-              several years as a musician in NYC and Paris before moving to LA.
-            </p>
-
-            <p className="mt-4">
               As an actor, her work on Jay Shetty's webseries has been viewed
               millions of times, and her voiceover career has spanned from
-              national commercials to award winning video games.
+              national commercials to award winning video games. As a musician,
+              she's sung with MIKA and Macy Gray, plays guitar, piano, and
+              ukulele, and has had her music featured in network and streaming
+              series.
             </p>
 
-            <p className="mt-4">
-              As a musician, she's sung with MIKA and Macy Gray, plays guitar,
-              piano, and ukulele, and has had her music featured in network and
-              streaming series.
-            </p>
-
-            <p className="mt-4">
-              PS, she knows how to code & built this website :)
-            </p>
+            <p>PS, she knows how to code & built this website ;)</p>
           </div>
         </div>
       </div>
