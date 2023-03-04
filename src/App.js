@@ -125,7 +125,7 @@ function App() {
         <div className="lg:w-1/2 m-auto h-2/3 md:h-screen lg:h-full mb-10">
           <iframe
             className="m-auto mb-10 w-full h-full"
-            src="https://drive.google.com/file/d/1gLynsLkuVIZpZWK2QtXW2fcmWoaD9qtE/preview"
+            src="https://drive.google.com/file/d/1_u_DvyFNZb5CFiAEtX1mZS-veTWUttpw/preview"
             allow="autoplay"
             title="Dominique Star's Acting Resume"
           ></iframe>
@@ -222,7 +222,7 @@ function App() {
       </div>
       <div className="relative w-screen bg-black/95 pb-10" ref={photoRef}>
         <h2>Headshots</h2>
-        <div className="grid grid-cols-2 md:grid-cols-2 mb-8 md:w-3/4 m-auto">
+        <div className="grid grid-cols-2 mb-8 md:w-3/4 m-auto gap-8">
           <div>
             <img
               src="DominiqueStarHeadshot2.jpg"
