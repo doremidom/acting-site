@@ -95,7 +95,7 @@ function App() {
         <div className="text-white text-left m-auto w-full md:flex relative top-1/3 bg-black p-4">
           <div className="items-center justify-center md:flex flex-col ">
             <img
-              src="DominiqueStarHeadshot.jpg?v=2"
+              src="DominiqueStarHeadshot1.jpeg?v=2"
               alt="Dominique Star Headshot"
             />
           </div>
@@ -112,7 +112,6 @@ function App() {
               national commercials to award winning video games. As a musician,
               she's sung with MIKA and Macy Gray, plays guitar, piano, and
               ukulele, and has had her music featured in network and streaming
-              series.
             </p>
 
             <p>PS, she knows how to code & built this website ;)</p>
@@ -223,10 +222,16 @@ function App() {
       </div>
       <div className="relative w-screen bg-black/95 pb-10" ref={photoRef}>
         <h2>Headshots</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 mb-8 md:w-3/4 m-auto">
           <div>
             <img
               src="DominiqueStarHeadshot2.jpg"
+              alt="Dominique Star Headshot"
+            />
+          </div>
+          <div>
+            <img
+              src="DominiqueStarHeadshot1.jpeg?v=2"
               alt="Dominique Star Headshot"
             />
           </div>
