@@ -132,7 +132,7 @@ function App() {
         </div>
         <a
           className="p-2 text-purple-400 hover:text-white border border-purple-400 mb"
-          href="https://drive.google.com/uc?export=download&id=1gLynsLkuVIZpZWK2QtXW2fcmWoaD9qtE"
+          href="https://drive.google.com/uc?export=download&id=1_u_DvyFNZb5CFiAEtX1mZS-veTWUttpw"
         >
           Download Resume
         </a>
