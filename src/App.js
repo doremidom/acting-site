@@ -290,7 +290,7 @@ function App() {
       <div className="relative w-screen bg-black/95 pb-10" ref={contactRef}>
         <h2 className="mb-4">Contact </h2>
 
-        <div className="pb-10 space-y-2">
+        <div className="pb-10 space-y-2 underline-offset-4">
           <p>
             Email:{" "}
             <a className="underline" href="mailto:info@dominiquestar.com">
