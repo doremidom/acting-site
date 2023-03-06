@@ -112,6 +112,7 @@ function App() {
               national commercials to award winning video games. As a musician,
               she's sung with MIKA and Macy Gray, plays guitar, piano, and
               ukulele, and has had her music featured in network and streaming
+              series.
             </p>
 
             <p>PS, she knows how to code & built this website ;)</p>
