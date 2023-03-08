@@ -95,7 +95,7 @@ function App() {
         <div className="text-white text-left m-auto w-full md:flex relative top-1/3 bg-black p-4">
           <div className="items-center justify-center md:flex flex-col ">
             <img
-              src="DominiqueStarHeadshot1.jpeg?v=2"
+              src="DominiqueStarHeadshot1.jpeg?v=3"
               alt="Dominique Star Headshot"
             />
           </div>
