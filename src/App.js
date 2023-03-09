@@ -93,13 +93,13 @@ function App() {
       </div>
       <div className="relative  w-screen bg-black/95" ref={synopsisRef}>
         <div className="text-white text-left m-auto w-full md:flex relative top-1/3 bg-black p-4">
-          <div className="items-center justify-center md:flex flex-col ">
+          <div className="items-center justify-center md:flex flex-col flex-1 ">
             <img
               src="DominiqueStarHeadshot1.jpeg?v=3"
               alt="Dominique Star Headshot"
             />
           </div>
-          <div className="items-center justify-center md:flex flex-col p-8 md:p-12 space-y-4">
+          <div className="items-center justify-center md:flex flex-col flex-1 p-8 md:p-12 space-y-4">
             <p>
               Dominique Star is an actor, singer, and multi-instrumentalist from
               Rhode Island. She attended Columbia University (French
@@ -200,27 +200,6 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="relative w-screen bg-black/95 pb-10" ref={voRef}>
-        <h2 className="mb-4">Voiceover </h2>
-        <p className="md:w-1/2 m-auto mb-8 p-4">
-          Dominique has quickly established a name for herself in the voiceover
-          world with her warm, authentic, grounded voice.
-        </p>
-
-        <p className=" p-4 md:w-1/2 m-auto mb-8">
-          Select clients include Meta, the NFL, and Verizon.
-        </p>
-
-        <iframe
-          src="https://www.youtube.com/embed/zE6_WCo4BHs
-"
-          title="YouTube video player"
-          frameBorder="0"
-          className="m-auto max-w-[400px] w-full h-[200px]"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      </div>
       <div className="relative w-screen bg-black/95 pb-10" ref={photoRef}>
         <h2>Headshots</h2>
         <div className="grid grid-cols-2 mb-8 md:w-3/4 m-auto gap-8">
@@ -232,7 +211,7 @@ function App() {
           </div>
           <div>
             <img
-              src="DominiqueStarHeadshot1.jpeg?v=2"
+              src="DominiqueStarHeadshot1.jpeg?v=4"
               alt="Dominique Star Headshot"
             />
           </div>
