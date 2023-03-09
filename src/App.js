@@ -226,7 +226,7 @@ function App() {
         <div className="grid grid-cols-2 mb-8 md:w-3/4 m-auto gap-8">
           <div>
             <img
-              src="DominiqueStarHeadshot2.jpg"
+              src="DominiqueStarHeadshot2.jpg?v=2"
               alt="Dominique Star Headshot"
             />
           </div>
