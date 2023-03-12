@@ -211,7 +211,7 @@ function App() {
           </div>
           <div>
             <img
-              src="DominiqueStarHeadshot1.jpeg?v=7"
+              src="DominiqueStarHeadshot1.jpeg?v=8"
               alt="Dominique Star Headshot"
             />
           </div>
