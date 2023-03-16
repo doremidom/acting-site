@@ -102,9 +102,8 @@ function App() {
           <div className="items-center justify-center md:flex flex-col flex-1 p-8 md:p-12 space-y-4">
             <p>
               Dominique Star is an actor, singer, and multi-instrumentalist from
-              Rhode Island. She attended Columbia University (French
-              Literature), and spent several years as a musician in NYC and
-              Paris before moving to LA.
+              Rhode Island. She attended Columbia University, and spent several
+              years as a musician in NYC and Paris before moving to LA.
             </p>
             <p>
               As an actor, her work on Jay Shetty's webseries has been viewed
@@ -205,7 +204,7 @@ function App() {
         <div className="grid grid-cols-2 mb-8 md:w-3/4 m-auto gap-8">
           <div>
             <img
-              src="DominiqueStarHeadshot2.jpg?v=2"
+              src="DominiqueStarHeadshot2.jpeg?v=2"
               alt="Dominique Star Headshot"
             />
           </div>
