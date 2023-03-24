@@ -204,20 +204,13 @@ function App() {
         <div className="grid grid-cols-2 mb-8 md:w-3/4 m-auto gap-8">
           <div>
             <img
-              src="DominiqueStarHeadshot2.jpeg?v=2"
+              src="DominiqueStarHeadshot2.jpeg?v=3"
               alt="Dominique Star Headshot"
             />
           </div>
           <div>
             <img
-              src="DominiqueStarHeadshot1.jpeg?v=9"
-              alt="Dominique Star Headshot"
-            />
-          </div>
-
-          <div>
-            <img
-              src="DominiqueStarHeadshot3.jpeg"
+              src="DominiqueStarHeadshot1.jpeg?v=10"
               alt="Dominique Star Headshot"
             />
           </div>
