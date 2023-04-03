@@ -201,13 +201,7 @@ function App() {
       </div>
       <div className="relative w-screen bg-black/95 pb-10" ref={photoRef}>
         <h2>Photos</h2>
-        <div className="grid grid-cols-2 mb-8 md:w-3/4 m-auto gap-8">
-          <div>
-            <img
-              src="DominiqueStarHeadshot2.jpeg?v=5"
-              alt="Dominique Star Headshot"
-            />
-          </div>
+        <div className="grid md:grid-cols-3 mb-8  m-auto gap-8">
           <div>
             <img
               src="DominiqueStarHeadshot4.jpeg?v=3"
