@@ -94,10 +94,7 @@ function App() {
       <div className="relative  w-screen bg-black/95" ref={synopsisRef}>
         <div className="text-white text-left m-auto w-full md:flex relative top-1/3 bg-black p-4">
           <div className="items-center justify-center md:flex flex-col flex-1 ">
-            <img
-              src="DominiqueStarHeadshot1.jpeg?v=5"
-              alt="Dominique Star Headshot"
-            />
+            <img src="DominiqueStar.jpeg" alt="Dominique Star Headshot" />
           </div>
           <div className="items-center justify-center md:flex flex-col flex-1 p-8 md:p-12 space-y-4">
             <p>
