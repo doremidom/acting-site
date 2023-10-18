@@ -170,10 +170,28 @@ function App() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/XjRGPgybitE?start=230"
+              title="YouTube video player"
+              className="m-auto max-w-[400px] w-full h-[200px]"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+            <br />
           </div>
 
           <div>
             <h3>MUSIC</h3>
+            <iframe
+              src="https://www.youtube.com/embed/UbwJKzvnPR4?start=46"
+              title="YouTube video player"
+              className="m-auto max-w-[400px] w-full h-[200px]"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+            <br />
             <iframe
               src="https://www.youtube.com/embed/2DygzyNLiE0"
               title="YouTube video player"
@@ -222,19 +240,21 @@ function App() {
         <div className="grid-cols-2 md:grid-cols-3 grid">
           <div>
             <img
+              src="DominiqueStarBass.png"
+              alt="Dominique Star playing Bass"
+            />
+          </div>
+          <div>
+            <img src="DominiqueStarSplit.png" alt="Dominique Star in Split" />
+          </div>
+          <div>
+            <img
               src="DominiqueStarStillJayShetty.jpg"
               alt="Dominique Star in Red Flags"
             />
           </div>
           <div>
             <img src="splash.jpg" alt="Dominique Star in Perchance to Dream" />
-          </div>
-
-          <div>
-            <img
-              src="DominiqueStarStillJayShetty2.jpg"
-              alt="Dominique Star in The Accident"
-            />
           </div>
           <div>
             <img
@@ -244,14 +264,8 @@ function App() {
           </div>
           <div>
             <img
-              src="DominiqueStarStillJayShetty3.jpg"
+              src="DominiqueStarStillJayShetty2.jpg"
               alt="Dominique Star in The Accident"
-            />
-          </div>
-          <div>
-            <img
-              src="DominiqueStarStillJayShetty4.png"
-              alt="Dominique Star in Red Flags"
             />
           </div>
         </div>
