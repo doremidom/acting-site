@@ -154,6 +154,15 @@ function App() {
           <div>
             <h3>ACTING</h3>
             <iframe
+              src="https://player.vimeo.com/video/852154793?h=43ddb52ecf"
+              width="640"
+              height="360"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <p></p>
+            <iframe
               className="m-auto max-w-[400px] w-full h-[200px]"
               src="https://www.youtube.com/embed/sUmdYp4qSn0"
               title="YouTube video player"
@@ -170,19 +179,31 @@ function App() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
+            <br />
             <iframe
-              src="https://www.youtube.com/embed/XjRGPgybitE?start=230"
-              title="YouTube video player"
               className="m-auto max-w-[400px] w-full h-[200px]"
-              frameBorder="0"
+              src="https://www.youtube.com/embed/XjRGPgybitE?si=P6RxOHT0-AP7zear"
+              title="YouTube video player"
+              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
             ></iframe>
             <br />
           </div>
 
           <div>
             <h3>MUSIC</h3>
+            <iframe
+              width="640"
+              height="360"
+              src="https://www.youtube.com/embed/F7lxNozXy5o?si=JyFY5hBY902O17Zs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
             <iframe
               src="https://www.youtube.com/embed/UbwJKzvnPR4?start=46"
               title="YouTube video player"
@@ -210,6 +231,7 @@ function App() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
+
             <br />
           </div>
         </div>
@@ -248,10 +270,7 @@ function App() {
             <img src="DominiqueStarSplit.png" alt="Dominique Star in Split" />
           </div>
           <div>
-            <img
-              src="DominiqueStarStillJayShetty.jpg"
-              alt="Dominique Star in Red Flags"
-            />
+            <img src="DominiqueStarSplit2.png" alt="Dominique Star in Split" />
           </div>
           <div>
             <img src="splash.jpg" alt="Dominique Star in Perchance to Dream" />
