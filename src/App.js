@@ -98,17 +98,26 @@ function App() {
           </div>
           <div className="items-center justify-center md:flex flex-col flex-1 p-8 md:p-12 space-y-4">
             <p>
-              Dominique Star is an actor, singer, and multi-instrumentalist from
-              Rhode Island. She attended Columbia University, and spent several
-              years as a musician in NYC and Paris before moving to LA.
+              Dominique Star is an{" "}
+              <b>actor, singer, and multi-instrumentalist</b> from Rhode Island.
+              She attended <b>Columbia University</b> and spent several years as
+              a musician in <b>NYC</b> and <b>Paris</b> before moving to LA.
             </p>
             <p>
-              As an actor, her work on Jay Shetty's webseries has been viewed
-              millions of times, and her voiceover career has spanned from
-              national commercials to award winning video games. As a musician,
-              she's sung with MIKA and Macy Gray, plays guitar, piano, and
-              ukulele, and has had her music featured in network and streaming
-              series.
+              In 2024 she co-created & directed a groundbreaking adaptation of
+              <b> Hamlet</b> told through the music of Radiohead. It premiered
+              to a sold-out 400 person concert in Los Angeles. You can read
+              about it{" "}
+              <a href="https://concept.perchancetodream.org/" target="_blank">
+                <u>here</u>
+              </a>
+              . If you happen to know Radiohead she would very much like to talk
+              to them.
+            </p>
+            <p>
+              As a musician, she's sung with MIKA and Macy Gray,{" "}
+              <b>plays guitar, piano, and ukulele</b>, and has had her music
+              featured in network and streaming series.
             </p>
 
             <p>PS, she knows how to code & built this website ;)</p>
@@ -276,10 +285,7 @@ function App() {
             <img src="splash.jpg" alt="Dominique Star in Perchance to Dream" />
           </div>
           <div>
-            <img
-              src="DominiqueStarStillSymphony.png"
-              alt="Dominique Star in Symphony"
-            />
+            <img src="split5.png" alt="Dominique Star in Split" />
           </div>
           <div>
             <img
