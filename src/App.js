@@ -285,7 +285,7 @@ function App() {
             <img src="splash.jpg" alt="Dominique Star in Perchance to Dream" />
           </div>
           <div>
-            <img src="split5.png" alt="Dominique Star in Split" />
+            <img src="DSsplit5.png" alt="Dominique Star in Split" />
           </div>
           <div>
             <img
