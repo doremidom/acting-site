@@ -99,8 +99,9 @@ function App() {
           <div className="items-center justify-center md:flex flex-col flex-1 p-8 md:p-12 space-y-4">
             <p>
               Dominique Star is an actor, singer, and multi-instrumentalist from
-              Rhode Island. She attended Columbia University and spent several
-              years as a musician in NYC and Paris before moving to LA.
+              Rhode Island. She attended Columbia University and La Sorbonne and
+              spent several years as a musician in NYC and Paris before moving
+              to LA.
             </p>
             <p>
               In 2023 she co-created & directed a groundbreaking adaptation of
