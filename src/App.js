@@ -99,9 +99,9 @@ function App() {
           <div className="items-center justify-center md:flex flex-col flex-1 p-8 md:p-12 space-y-4">
             <p>
               Dominique Star is an actor, singer, and multi-instrumentalist from
-              Rhode Island. She attended Columbia University and La Sorbonne and
-              spent several years as a musician in NYC and Paris before moving
-              to LA.
+              Rhode Island. She attended Columbia University and La Sorbonne,
+              and spent several years as a musician in NYC and Paris before
+              moving to LA.
             </p>
             <p>
               In 2023 she co-created & directed a groundbreaking adaptation of
@@ -160,15 +160,7 @@ function App() {
         <div className="md:flex justify-center gap-12">
           <div>
             <h3>ACTING</h3>
-            <iframe
-              src="https://player.vimeo.com/video/852154793?h=43ddb52ecf"
-              width="640"
-              height="360"
-              frameborder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-            <p></p>
+
             <iframe
               className="m-auto max-w-[400px] w-full h-[200px]"
               src="https://www.youtube.com/embed/sUmdYp4qSn0"
@@ -202,8 +194,7 @@ function App() {
           <div>
             <h3>MUSIC</h3>
             <iframe
-              width="640"
-              height="360"
+              className="m-auto max-w-[400px] w-full h-[200px]"
               src="https://www.youtube.com/embed/F7lxNozXy5o?si=JyFY5hBY902O17Zs"
               title="YouTube video player"
               frameborder="0"
