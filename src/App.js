@@ -81,70 +81,67 @@ function App() {
           label="contact"
         />
       </nav>
-      <div className="w-screen h-screen m-auto text-center uppercase text-white">
-        <div className="w-full h-full bg-black/50">
+      <div className="w-screen h-screen m-auto text-center uppercase text-black">
+        <div className="w-full h-full bg-white/50">
           <div className="relative top-1/3">
-            <div className="text-5xl relative top-1/3  md:text-[96px]">
+            <div className="text-5xl relative top-1/3  md:text-[96px] font-thin">
               Dominique Star
             </div>
             <div className="text-xl md:text-2xl">Actor, Singer, Musician</div>
           </div>
         </div>
       </div>
-      <div className="relative  w-screen bg-black/95" ref={synopsisRef}>
-        <div className="text-white text-left m-auto w-full md:flex relative top-1/3 bg-black p-4">
+      <div className="relative  w-screen bg-white/95" ref={synopsisRef}>
+        <div className="text-black text-left m-auto w-full md:flex relative top-1/3 bg-white p-4">
           <div className="items-center justify-center md:flex flex-col flex-1 ">
-            <img src="DominiqueStar.jpeg" alt="Dominique Star Headshot" />
+            <img src="jackieng1.jpg" alt="Dominique Star Headshot" />
           </div>
           <div className="items-center justify-center md:flex flex-col flex-1 p-8 md:p-12 space-y-4">
             <p>
-              Dominique Star is an{" "}
-              <b>actor, singer, and multi-instrumentalist</b> from Rhode Island.
-              She attended <b>Columbia University</b> and spent several years as
-              a musician in <b>NYC</b> and <b>Paris</b> before moving to LA.
+              Dominique Star is an actor, singer, and multi-instrumentalist from
+              Rhode Island. She attended Columbia University and spent several
+              years as a musician in NYC and Paris before moving to LA.
             </p>
             <p>
-              In 2024 she co-created & directed a groundbreaking adaptation of
-              <b> Hamlet</b> told through the music of Radiohead. It premiered
-              to a sold-out 400 person concert in Los Angeles. You can read
-              about it{" "}
+              In 2023 she co-created & directed a groundbreaking adaptation of
+              Hamlet told through the music of Radiohead. It premiered to a
+              sold-out 400 person concert in Los Angeles. You can read about it{" "}
               <a href="https://concept.perchancetodream.org/" target="_blank">
                 <u>here</u>
               </a>
               . If you happen to know Radiohead she would very much like to talk
               to them.
             </p>
+
             <p>
-              As a musician, she's sung with MIKA and Macy Gray,{" "}
-              <b>plays guitar, piano, and ukulele</b>, and has had her music
-              featured in network and streaming series.
+              As a musician, she's sung with MIKA and Macy Gray, plays guitar,
+              piano, drums, bass, and ukulele, and has had her music featured in
+              network and streaming series.
+            </p>
+            <p>
+              2024 has been her busiest year yet, with roles in two feature
+              films and a new ABC series.
+            </p>
+
+            <p>
+              She is represented by Aqua Talent theatrically and the Bella
+              Agency for modelling.
             </p>
 
             <p>PS, she knows how to code & built this website ;)</p>
+
+            <a
+              className="p-2 text-purple-400 hover:text-white border border-purple-400 mb"
+              href="https://drive.google.com/uc?export=download&id=1_u_DvyFNZb5CFiAEtX1mZS-veTWUttpw"
+            >
+              Download Acting Resume
+            </a>
           </div>
         </div>
       </div>
+
       <div
-        className="w-screen h-screen bg-black/95 pt-10 text-white md:pb-10"
-        ref={musicRef}
-      >
-        <div className="lg:w-1/2 m-auto h-2/3 md:h-screen lg:h-full mb-10">
-          <iframe
-            className="m-auto mb-10 w-full h-full"
-            src="https://drive.google.com/file/d/1_u_DvyFNZb5CFiAEtX1mZS-veTWUttpw/preview"
-            allow="autoplay"
-            title="Dominique Star's Acting Resume"
-          ></iframe>
-        </div>
-        <a
-          className="p-2 text-purple-400 hover:text-white border border-purple-400 mb"
-          href="https://drive.google.com/uc?export=download&id=1_u_DvyFNZb5CFiAEtX1mZS-veTWUttpw"
-        >
-          Download Resume
-        </a>
-      </div>
-      <div
-        className="w-screen bg-black/95 text-center md:py-10 md:pt-44"
+        className="w-screen bg-white/95 text-center md:py-10 md:pt-44"
         ref={conceptRef}
       >
         <h2>THEATRICAL & MUSIC REEL</h2>
@@ -245,7 +242,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="relative w-screen bg-black/95 pb-10" ref={photoRef}>
+      <div className="relative w-screen bg-white/95 pb-10" ref={photoRef}>
         <h2>Photos</h2>
         <div className="grid md:grid-cols-3 mb-8  m-auto gap-8">
           <div>
@@ -270,10 +267,7 @@ function App() {
         <h2>Project Stills</h2>
         <div className="grid-cols-2 md:grid-cols-3 grid">
           <div>
-            <img
-              src="DominiqueStarBass.png"
-              alt="Dominique Star playing Bass"
-            />
+            <img src="jordana.jpg" alt="Photo by Jordana Sheara" />
           </div>
           <div>
             <img src="DominiqueStarSplit.png" alt="Dominique Star in Split" />
@@ -282,21 +276,18 @@ function App() {
             <img src="DominiqueStarSplit2.png" alt="Dominique Star in Split" />
           </div>
           <div>
+            <img src="jackieeng2-min.jpg" alt="Photo by Jackie Ng" />
+          </div>
+          <div>
             <img src="splash.jpg" alt="Dominique Star in Perchance to Dream" />
           </div>
           <div>
             <img src="DSsplit5.png" alt="Dominique Star in Split" />
           </div>
-          <div>
-            <img
-              src="DominiqueStarStillJayShetty2.jpg"
-              alt="Dominique Star in The Accident"
-            />
-          </div>
         </div>
       </div>
 
-      <div className="relative w-screen bg-black/95 pb-10" ref={contactRef}>
+      <div className="relative w-screen bg-white/95 pb-10" ref={contactRef}>
         <h2 className="mb-4">Contact </h2>
 
         <div className="pb-10 space-y-2 underline-offset-4">
@@ -333,8 +324,7 @@ function App() {
               className="underline"
             >
               Instagram
-            </a>
-            - 20k followers |{" "}
+            </a>{" "}
             <a
               href="https://www.youtube.com/dominiquestar"
               rel="noreferrer"
@@ -343,7 +333,6 @@ function App() {
             >
               Youtube
             </a>
-            - 1.1k followers
           </p>
         </div>
       </div>
