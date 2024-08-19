@@ -125,8 +125,8 @@ function App() {
             </p>
 
             <p>
-              She is represented by Aqua Talent theatrically and the Bella
-              Agency for modelling.
+              She is managed by Citizen Skull Management theatrically and the
+              Bella Agency for modelling.
             </p>
 
             <p>PS, she knows how to code & built this website ;)</p>
