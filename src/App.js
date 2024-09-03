@@ -31,7 +31,7 @@ function App() {
           Your browser does not support the video tag.
         </video>
       </MobileView>
-
+      {/*
       <nav
         className={`w-screen h-10 md:hover:h-10 flex fixed top-0 z-30 transition-[height] duration-200 overflow-hidden`}
       >
@@ -80,7 +80,7 @@ function App() {
           hoveredLink={hoveredLink}
           label="contact"
         />
-      </nav>
+      </nav> */}
       <div className="w-screen h-screen m-auto text-center uppercase text-black">
         <div className="w-full h-full bg-white/50">
           <div className="relative top-1/3">
