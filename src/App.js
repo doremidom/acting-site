@@ -220,26 +220,15 @@ function App() {
               allowFullScreen
             ></iframe>
             <br />
-
-            <iframe
-              src="https://www.youtube.com/embed/3HV8pl1ERbo?start=271"
-              title="YouTube video player"
-              frameBorder="0"
-              className="m-auto max-w-[400px] w-full h-[200px]"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-
-            <br />
           </div>
         </div>
       </div>
       <div className="relative w-screen bg-white/95 pb-10" ref={photoRef}>
-        <h2>Photos</h2>
+        <h2>Headshots</h2>
         <div className="grid md:grid-cols-3 mb-8  m-auto gap-8">
           <div>
             <img
-              src="DominiqueStarHeadshot4.jpeg?v=3"
+              src="DominiqueStarHeadshot3.jpeg?v=3"
               alt="Dominique Star Headshot"
             />
           </div>
@@ -251,7 +240,7 @@ function App() {
           </div>
           <div>
             <img
-              src="DominiqueStarHeadshot3.jpeg?v=3"
+              src="DominiqueStarHeadshot4.jpeg?v=3"
               alt="Dominique Star Headshot"
             />
           </div>
