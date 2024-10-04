@@ -141,86 +141,31 @@ function App() {
         </div>
       </div>
 
-      <div
-        className="w-screen bg-white/95 text-center md:py-10 md:pt-44"
-        ref={conceptRef}
-      >
-        <h2>THEATRICAL & MUSIC REEL</h2>
+      <div className="w-screen bg-white/95 text-center py-10" ref={conceptRef}>
+        <h2>Theatrical Reel</h2>
+        <div className="m-auto mb-10 w-full md:w-1/2 h-full max-w-[800px] text-center">
+          <iframe
+            className="youtube-video"
+            src="https://www.youtube.com/embed/S-FWUwGFQcg"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
+        </div>
 
-        <iframe
-          className="m-auto mb-10 w-full md:w-1/2 h-[315px] max-w-[600px]"
-          src="https://www.youtube.com/embed/Pmpls4-jzNg"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-
-        <br />
-        <div className="md:flex justify-center gap-12">
-          <div>
-            <h3>ACTING</h3>
-
-            <iframe
-              className="m-auto max-w-[400px] w-full h-[200px]"
-              src="https://www.youtube.com/embed/sUmdYp4qSn0"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-            <br />
-            <iframe
-              className="m-auto max-w-[400px] w-full h-[200px]"
-              src="https://www.youtube.com/embed/ZYgrNwUBcR0"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-            <br />
-            <iframe
-              className="m-auto max-w-[400px] w-full h-[200px]"
-              src="https://www.youtube.com/embed/XjRGPgybitE?si=P6RxOHT0-AP7zear"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-            <br />
-          </div>
-
-          <div>
-            <h3>MUSIC</h3>
-            <iframe
-              className="m-auto max-w-[400px] w-full h-[200px]"
-              src="https://www.youtube.com/embed/F7lxNozXy5o?si=JyFY5hBY902O17Zs"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-            <iframe
-              src="https://www.youtube.com/embed/UbwJKzvnPR4?start=46"
-              title="YouTube video player"
-              className="m-auto max-w-[400px] w-full h-[200px]"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-            <br />
-            <iframe
-              src="https://www.youtube.com/embed/2DygzyNLiE0"
-              title="YouTube video player"
-              className="m-auto max-w-[400px] w-full h-[200px]"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-            <br />
-          </div>
+        <h2>Music Reel</h2>
+        <div className="m-auto mb-10 w-full md:w-1/2 h-full max-w-[800px] text-center">
+          <iframe
+            className="youtube-video"
+            src="https://www.youtube.com/embed/S2LNrdgm-Qc"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
         </div>
       </div>
       <div className="relative w-screen bg-white/95 pb-10" ref={photoRef}>
@@ -248,7 +193,10 @@ function App() {
         <h2>Project Stills</h2>
         <div className="grid-cols-2 md:grid-cols-3 grid">
           <div>
-            <img src="jordana.jpg" alt="Photo by Jordana Sheara" />
+            <img
+              src="DoctorOdysseyPhillippaSooDominiqueStar.jpg"
+              alt="Phillippa Soo and Dominique Star in Doctor Odyssey"
+            />
           </div>
           <div>
             <img src="DominiqueStarSplit.png" alt="Dominique Star in Split" />
@@ -257,7 +205,10 @@ function App() {
             <img src="DominiqueStarSplit2.png" alt="Dominique Star in Split" />
           </div>
           <div>
-            <img src="jackieeng2-min.jpg" alt="Photo by Jackie Ng" />
+            <img
+              src="DoctorOdysseyChordOverstreetDominiqueStar.jpg"
+              alt="Chord Overstreet and Dominique Star in Doctor Odyssey"
+            />
           </div>
           <div>
             <img src="splash.jpg" alt="Dominique Star in Perchance to Dream" />
