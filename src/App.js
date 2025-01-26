@@ -98,10 +98,10 @@ function App() {
           </div>
           <div className="items-center justify-center md:flex flex-col flex-1 p-8 md:p-12 space-y-4">
             <p>
-              Dominique Star is an actor, singer, and multi-instrumentalist from
-              Rhode Island. She attended Columbia University and La Sorbonne,
-              and spent several years as a musician in NYC and Paris before
-              moving to LA.
+              Dominique Star is an actor, singer, and musician from Rhode
+              Island. She attended Columbia University and La Sorbonne, and
+              spent several years as a musician in NYC and Paris before moving
+              to LA.
             </p>
             <p>
               In 2023 she co-created & directed a groundbreaking adaptation of
@@ -115,18 +115,21 @@ function App() {
             </p>
 
             <p>
-              As a musician, she's sung with MIKA and Macy Gray, plays guitar,
-              piano, drums, bass, and ukulele, and has had her music featured in
-              network and streaming series.
-            </p>
-            <p>
-              2024 has been her busiest year yet, with roles in two feature
-              films and a new ABC series.
+              As a musician, she's sung with MIKA and Macy Gray, plays many
+              instruments, and has had her music featured in network and
+              streaming series, most prominently her song "Waterfall" was used
+              in the hit MTV series Siesta Key..
             </p>
 
             <p>
-              She is managed by Citizen Skull Management theatrically and the
-              Bella Agency for modelling.
+              She is managed by Citizen Skull Management theatrically and the{" "}
+              <a
+                href="https://www.bellaagency.com/la/lifestyle/women/2558435/dominique-star/portfolio/large"
+                target="_blank"
+              >
+                <u>Bella Agency</u>
+              </a>{" "}
+              for modelling.
             </p>
 
             <p>PS, she knows how to code & built this website ;)</p>
@@ -171,12 +174,6 @@ function App() {
       <div className="relative w-screen bg-white/95 pb-10" ref={photoRef}>
         <h2>Headshots</h2>
         <div className="grid md:grid-cols-3 mb-8  m-auto gap-8">
-          <div>
-            <img
-              src="DominiqueStarHeadshot3.jpeg?v=3"
-              alt="Dominique Star Headshot"
-            />
-          </div>
           <div>
             <img
               src="DominiqueStarHeadshot1.jpeg?v=10"
