@@ -145,7 +145,7 @@ function App() {
       </div>
 
       <div className="w-screen bg-white/95 text-center py-10" ref={conceptRef}>
-        <h2>Theatrical Reel</h2>
+        <h2>Acting Reel</h2>
         <div className="m-auto mb-10 w-full md:w-1/2 h-full max-w-[800px] text-center">
           <iframe
             className="youtube-video"
@@ -158,7 +158,18 @@ function App() {
           ></iframe>
         </div>
 
-        <h2>Music Reel</h2>
+        <h2>Music</h2>
+        <div className="m-auto mb-10 w-full md:w-1/2 h-full max-w-[800px] text-center">
+          <iframe
+            className="youtube-video"
+            src="https://www.youtube.com/embed/DnQZBw7ePNU?si=2-2kLcK-VaCYGfP-"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
         <div className="m-auto mb-10 w-full md:w-1/2 h-full max-w-[800px] text-center">
           <iframe
             className="youtube-video"
@@ -183,6 +194,12 @@ function App() {
           <div>
             <img
               src="DominiqueStarHeadshot4.jpeg?v=3"
+              alt="Dominique Star Headshot"
+            />
+          </div>
+          <div>
+            <img
+              src="DominiqueStarHeadshot3.jpeg?v=3"
               alt="Dominique Star Headshot"
             />
           </div>
