@@ -19,21 +19,16 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserView>
-        <video id="bg-video" loop autoPlay muted playsInline poster={still}>
-          <source src={vid} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </BrowserView>
-      <MobileView>
-        <video id="bg-video" loop autoPlay muted playsInline poster={still}>
-          <source src={mobile_vid} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </MobileView>
-      {/*
+      <div className="w-1/2 text-left p-5">
+          <p>
+              Dominique Star is an actor, singer, and musician who splits her time between Los Angeles and London. She attended Columbia University and La Sorbonne, and
+              spent several years as a musician in NYC and Paris.
+
+            </p>
+      </div>
+
       <nav
-        className={`w-screen h-10 md:hover:h-10 flex fixed top-0 z-30 transition-[height] duration-200 overflow-hidden`}
+        className={` h-10 md:hover:h-10 right-0 flex fixed top-0 z-30 transition-[height] duration-200 overflow-hidden`}
       >
         <NavItem
           onClick={() =>
@@ -51,16 +46,7 @@ function App() {
           onHover={setHoveredLink}
           bgColor="hover:border-pink-600"
           hoveredLink={hoveredLink}
-          label="resume"
-        />
-        <NavItem
-          onClick={() =>
-            conceptRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          bgColor="hover:border-green-600"
-          onHover={setHoveredLink}
-          hoveredLink={hoveredLink}
-          label="media"
+          label="reel"
         />
         <NavItem
           onClick={() =>
@@ -73,6 +59,16 @@ function App() {
         />
         <NavItem
           onClick={() =>
+            conceptRef.current.scrollIntoView({ behavior: "smooth" })
+          }
+          bgColor="hover:border-green-600"
+          onHover={setHoveredLink}
+          hoveredLink={hoveredLink}
+          label="resume"
+        />
+
+        <NavItem
+          onClick={() =>
             contactRef.current.scrollIntoView({ behavior: "smooth" })
           }
           bgColor="hover:border-orange-600"
@@ -80,66 +76,41 @@ function App() {
           hoveredLink={hoveredLink}
           label="contact"
         />
-      </nav> */}
-      <div className="w-screen h-screen m-auto text-center uppercase text-black">
-        <div className="w-full h-full bg-white/50">
-          <div className="relative top-1/3">
-            <div className="text-5xl relative top-1/3  md:text-[96px] font-thin">
-              Dominique Star
-            </div>
-            <div className="text-xl md:text-2xl">Actor, Singer, Musician</div>
-          </div>
-        </div>
-      </div>
+      </nav>
+
       <div className="relative  w-screen bg-white/95" ref={synopsisRef}>
         <div className="text-black text-left m-auto w-full md:flex relative top-1/3 bg-white p-4">
           <div className="items-center justify-center md:flex flex-col flex-1 ">
-            <img src="jackieng1.jpg" alt="Dominique Star Headshot" />
+            <img src="DominiqueStar.jpg" alt="Dominique Star" />
           </div>
-          <div className="items-center justify-center md:flex flex-col flex-1 p-8 md:p-12 space-y-4">
+          <div className="md:flex flex-col flex-1 p-8 md:p-12 space-y-4">
+            <h2>RECENT WORK</h2>
+            <ul>
+              <li><b>2025</b></li>
+              <li>Summer Intensive at the Royal Academy of Dramatic Arts</li>
+              <li>Booked a Pokemon Go campaign (how 2016).</li>
+              <li><b>2024</b></li>
+              <li>Music/Theatre: Perchance to Dream Concept Album (Radiohead + Hamlet) - Listen here</li>
+              <li>Television: Doctor Odyssey Ep. 2 (her network debut!)</li>
+              <li>Film: V/H/S Beyond</li>
+              <li><b>2023</b></li>
+              <li>Theatre: Co-created, produced, and directed a groundbreaking adaptation of
+              Hamlet told through the music of Radiohead. <a href="https://concept.perchancetodream.org/" target="_blank">
+                <u>Photos & more here</u>
+              </a></li>
+              <li>Film: Starred as Jamie in Split, a USC MFA thesis now making the festival rounds.</li>
+            </ul>
+
+            <h2>ABOUT</h2>
             <p>
-              Dominique Star is an actor, singer, and musician from Rhode
-              Island. She attended Columbia University and La Sorbonne, and
-              spent several years as a musician in NYC and Paris before moving
-              to LA.
+              Born in Connecticut but raised in Rhode Island, Dominique is a creative soul with the heart of a poet and the work ethic of someone who literally does not know how to chill out and do nothing.
             </p>
             <p>
-              In 2023 she co-created & directed a groundbreaking adaptation of
-              Hamlet told through the music of Radiohead. It premiered to a
-              sold-out 400 person concert in Los Angeles. You can read about it{" "}
-              <a href="https://concept.perchancetodream.org/" target="_blank">
-                <u>here</u>
-              </a>
-              . If you happen to know Radiohead she would very much like to talk
-              to them.
+              She is managed by Citizen Skull Management theatrically and
+                Wildflowers Agency
+              for modelling and commercials.
             </p>
-
-            <p>
-              As a musician, she's sung with MIKA and Macy Gray, plays many
-              instruments, and has had her music featured in network and
-              streaming series, most prominently her song "Waterfall" was used
-              in the hit MTV series Siesta Key..
-            </p>
-
-            <p>
-              She is managed by Citizen Skull Management theatrically and the{" "}
-              <a
-                href="https://www.bellaagency.com/la/lifestyle/women/2558435/dominique-star/portfolio/large"
-                target="_blank"
-              >
-                <u>Bella Agency</u>
-              </a>{" "}
-              for modelling.
-            </p>
-
-            <p>PS, she knows how to code & built this website ;)</p>
-
-            <a
-              className="p-2 text-purple-400 hover:text-white border border-purple-400 mb"
-              href="https://drive.google.com/uc?export=download&id=1_u_DvyFNZb5CFiAEtX1mZS-veTWUttpw"
-            >
-              Download Acting Resume
-            </a>
+            <p>Also, she knows how to code & built this website.</p>
           </div>
         </div>
       </div>
@@ -202,33 +173,6 @@ function App() {
               src="DominiqueStarHeadshot3.jpeg?v=3"
               alt="Dominique Star Headshot"
             />
-          </div>
-        </div>
-        <h2>Project Stills</h2>
-        <div className="grid-cols-2 md:grid-cols-3 grid">
-          <div>
-            <img
-              src="DoctorOdysseyPhillippaSooDominiqueStar.jpg"
-              alt="Phillippa Soo and Dominique Star in Doctor Odyssey"
-            />
-          </div>
-          <div>
-            <img src="DominiqueStarSplit.png" alt="Dominique Star in Split" />
-          </div>
-          <div>
-            <img src="DominiqueStarSplit2.png" alt="Dominique Star in Split" />
-          </div>
-          <div>
-            <img
-              src="DoctorOdysseyChordOverstreetDominiqueStar.jpg"
-              alt="Chord Overstreet and Dominique Star in Doctor Odyssey"
-            />
-          </div>
-          <div>
-            <img src="splash.jpg" alt="Dominique Star in Perchance to Dream" />
-          </div>
-          <div>
-            <img src="DSsplit5.png" alt="Dominique Star in Split" />
           </div>
         </div>
       </div>

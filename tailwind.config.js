@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        montserrat: ['"Montserrat"'],
+        montserrat: ['"Inter"'],
       },
     },
   },
