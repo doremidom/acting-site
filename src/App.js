@@ -19,16 +19,16 @@ function App() {
 
   return (
     <div className="App">
-      <div className="w-1/2 text-left p-5">
+      <div className="md:w-1/2 text-left p-4 pb-0">
           <p>
-              Dominique Star is an actor, singer, and musician who splits her time between Los Angeles and London. She attended Columbia University and La Sorbonne, and
+              <b>DOMINIQUE STAR</b> is an actor, singer, and musician who splits her time between Los Angeles and London. She attended Columbia University and La Sorbonne and
               spent several years as a musician in NYC and Paris.
 
             </p>
       </div>
 
       <nav
-        className={` h-10 md:hover:h-10 right-0 flex fixed top-0 z-30 transition-[height] duration-200 overflow-hidden`}
+        className={`hidden  h-10 md:hover:h-10 right-0 md:flex fixed top-0 z-30 transition-[height] duration-200 overflow-hidden`}
       >
         <NavItem
           onClick={() =>
@@ -37,16 +37,16 @@ function App() {
           bgColor="hover:border-blue-600"
           onHover={setHoveredLink}
           hoveredLink={hoveredLink}
-          label="bio"
+          label="ABOUT"
         />
         <NavItem
           onClick={() =>
-            musicRef.current.scrollIntoView({ behavior: "smooth" })
+            conceptRef.current.scrollIntoView({ behavior: "smooth" })
           }
+          bgColor="hover:border-green-600"
           onHover={setHoveredLink}
-          bgColor="hover:border-pink-600"
           hoveredLink={hoveredLink}
-          label="reel"
+          label="Videos"
         />
         <NavItem
           onClick={() =>
@@ -57,15 +57,7 @@ function App() {
           hoveredLink={hoveredLink}
           label="photos"
         />
-        <NavItem
-          onClick={() =>
-            conceptRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          bgColor="hover:border-green-600"
-          onHover={setHoveredLink}
-          hoveredLink={hoveredLink}
-          label="resume"
-        />
+
 
         <NavItem
           onClick={() =>
@@ -87,11 +79,11 @@ function App() {
             <h2>RECENT WORK</h2>
             <ul>
               <li><b>2025</b></li>
-              <li>Summer Intensive at the Royal Academy of Dramatic Arts</li>
-              <li>Booked a Pokemon Go campaign (how 2016).</li>
+              <li>Summer Intensive at the <b>Royal Academy of Dramatic Arts (RADA)</b></li>
+              <li>Pokemon Go campaign (how 2016)</li>
               <li><b>2024</b></li>
               <li>Music/Theatre: Perchance to Dream Concept Album (Radiohead + Hamlet) - Listen here</li>
-              <li>Television: Doctor Odyssey Ep. 2 (her network debut!)</li>
+              <li>Television: <b>Doctor Odyssey</b> (her network debut!)</li>
               <li>Film: V/H/S Beyond</li>
               <li><b>2023</b></li>
               <li>Theatre: Co-created, produced, and directed a groundbreaking adaptation of
@@ -103,14 +95,14 @@ function App() {
 
             <h2>ABOUT</h2>
             <p>
-              Born in Connecticut but raised in Rhode Island, Dominique is a creative soul with the heart of a poet and the work ethic of someone who literally does not know how to chill out and do nothing.
+              Born in Connecticut but raised in Rhode Island, Dominique is a creative soul with the heart of a poet and the work ethic of someone who literally does not know how to chill out and do nothing. Her favorite catchphrase is "how hard can it be?"
             </p>
             <p>
-              She is managed by Citizen Skull Management theatrically and
+              She is represented by Citizen Skull Management theatrically and
                 Wildflowers Agency
               for modelling and commercials.
             </p>
-            <p>Also, she knows how to code & built this website.</p>
+            <p>Also, she knows how to code & built this website (take that, squarespace).</p>
           </div>
         </div>
       </div>
@@ -120,7 +112,7 @@ function App() {
         <div className="m-auto mb-10 w-full md:w-1/2 h-full max-w-[800px] text-center">
           <iframe
             className="youtube-video"
-            src="https://www.youtube.com/embed/S-FWUwGFQcg"
+            src="https://www.youtube.com/embed/adgo3ostrAQ"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -129,7 +121,7 @@ function App() {
           ></iframe>
         </div>
 
-        <h2>Music</h2>
+        <h2>Here are all the instruments she can play in one convenient video:</h2>
         <div className="m-auto mb-10 w-full md:w-1/2 h-full max-w-[800px] text-center">
           <iframe
             className="youtube-video"
@@ -141,36 +133,25 @@ function App() {
             allowfullscreen
           ></iframe>
         </div>
-        <div className="m-auto mb-10 w-full md:w-1/2 h-full max-w-[800px] text-center">
-          <iframe
-            className="youtube-video"
-            src="https://www.youtube.com/embed/S2LNrdgm-Qc"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            loading="lazy"
-          ></iframe>
-        </div>
       </div>
       <div className="relative w-screen bg-white/95 pb-10" ref={photoRef}>
-        <h2>Headshots</h2>
+        <h2>Here is her face:</h2>
         <div className="grid md:grid-cols-3 mb-8  m-auto gap-8">
           <div>
             <img
-              src="DominiqueStarHeadshot1.jpeg?v=10"
+              src="DominiqueStarHeadshot1.jpg?v=11"
               alt="Dominique Star Headshot"
             />
           </div>
           <div>
             <img
-              src="DominiqueStarHeadshot4.jpeg?v=3"
+              src="DominiqueStarHeadshot2.jpg?v=3"
               alt="Dominique Star Headshot"
             />
           </div>
           <div>
             <img
-              src="DominiqueStarHeadshot3.jpeg?v=3"
+              src="DominiqueStarHeadshot3.jpg?v=3"
               alt="Dominique Star Headshot"
             />
           </div>
