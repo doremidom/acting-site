@@ -60,3 +60,57 @@ h3 {
     transform: rotate(360deg);
   }
 }
+
+
+.scroll-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scroll-parent {
+  position: relative;
+  width: 100vw;
+  height: 20rem;
+  padding: 2rem 0;
+  overflow-x: hidden;
+}
+
+.scroll-element {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+.primary {
+  animation: primary 3s linear infinite;
+}
+
+.secondary {
+  animation: secondary 3s linear infinite;
+}
+
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes secondary {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
