@@ -77,7 +77,7 @@ function App() {
             <h2>RECENT WORK</h2>
             <ul>
               <li><b>2025</b></li>
-              <li>Summer Intensive at the <b>Royal Academy of Dramatic Arts (RADA)</b></li>
+              <li>Summer Intensive at the <b>Royal Academy of Dramatic Art (RADA)</b></li>
               <li>Pokemon Go campaign (how 2016)</li>
               <li><b>2024</b></li>
               <li>Music/Theatre: Perchance to Dream Concept Album (Radiohead + Hamlet) - <a href="https://pcd.fyi" target="_blank"><u>Listen here -></u></a></li>
