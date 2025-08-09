@@ -31,12 +31,12 @@ code {
 }
 
 .splash{
-  background-image: url("/public/DominiqueStar.jpg");
+  background-image: url("/public/b2.jpg");
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
-  color: #ff7373;
+  background-size:  contain;
+  color: white;
 }
 
 

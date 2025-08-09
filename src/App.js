@@ -22,7 +22,7 @@ function App() {
             </p>
       </div> */}
       <div className="h-screen splash items-center justify-center flex">
-        <div className="name text-[7vw] font-medium">
+        <div className=" text-[4rem] md:text-[107px] font-medium">
      DOMINIQUE STAR
         </div>
       </div>
