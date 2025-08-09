@@ -1,168 +1,96 @@
 import logo from "./logo.svg";
 import "./App.css";
-import vid from "./videos/bg_desktop.mp4";
-import mobile_vid from "./videos/bg_mobile.mp4";
-import still from "./videos/bg.jpg";
 import NavItem from "./NavItem";
-import React, { useRef, useState } from "react";
-import { BrowserView, MobileView } from "react-device-detect";
+import React, { useRef } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  const musicRef = useRef();
   const conceptRef = useRef();
   const synopsisRef = useRef();
-  const voRef = useRef();
   const photoRef = useRef();
   const contactRef = useRef();
 
-  const [hoveredLink, setHoveredLink] = useState("");
 
   return (
+      <Router>
+        <React.Fragment>
     <div className="App">
-      <div className="md:w-1/2 text-left p-4 pb-0">
+      {/* <div className="md:w-1/2 text-left p-4 pb-0">
           <p>
               <b>DOMINIQUE STAR</b> is an actor, singer, and musician who splits her time between Los Angeles and London. She attended Columbia University and La Sorbonne and
               spent several years as a musician in NYC and Paris.
             </p>
+      </div> */}
+      <div className="h-screen splash items-center justify-center flex">
+        <div className="name text-[7vw] font-medium">
+     DOMINIQUE STAR
+        </div>
       </div>
 
+      <div className="w-screen bg-white/95 relative" ref={synopsisRef}>
+        <div className="text-black text-left m-auto w-full bg-white p-4 pt-0">
       <nav
-        className={`hidden  h-10 md:hover:h-10 right-0 md:flex fixed top-0 z-30 transition-[height] duration-200 overflow-hidden`}
+        className={`flex py-4  text-lg font-bold right-0 text-center items-center justify-center space-x-4 `}
       >
+        <div className="flex space-x-1 mr-1 items-center">
+            <a href="https://instagram.com/doremidom" target="_blank" rel="noreferrer">
+          <img src="ig.svg"  alt="instagram" className="w-5 h-5 max-w-none hover:fill-white" />
+        </a>
+         <a href="https://www.youtube.com/@DominiqueStar" target="_blank" rel="noreferrer">
+          <img src="yt.svg"  alt="youtube" className="w-5 h-5 max-w-none hover:fill-white" />
+        </a>
+        <a href="https://www.tiktok.com/@Dominique_Star" target="_blank" rel="noreferrer">
+          <img src="tt.svg"  alt="tiktok" className="w-5 h-5 max-w-none hover:fill-white" />
+        </a>
+        </div>
         <NavItem
-          onClick={() =>
-            synopsisRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          bgColor="hover:border-blue-600"
-          onHover={setHoveredLink}
-          hoveredLink={hoveredLink}
-          label="ABOUT"
+          bgColor="hover:bg-blue-600"
+
+          href="/"
+          label="Home"
         />
         <NavItem
           onClick={() =>
             conceptRef.current.scrollIntoView({ behavior: "smooth" })
           }
-          bgColor="hover:border-green-600"
-          onHover={setHoveredLink}
-          hoveredLink={hoveredLink}
-          label="Videos"
+          bgColor="hover:bg-green-600"
+
+          href="/music"
+          label="Music"
         />
-        <NavItem
-          onClick={() =>
-            photoRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          bgColor="hover:border-green-600"
-          onHover={setHoveredLink}
-          hoveredLink={hoveredLink}
-          label="photos"
+<NavItem
+          href="/acting"
+          bgColor="hover:bg-purple-600"
+
+          label="Acting"
+        />
+             <NavItem
+         href="/modeling"
+          bgColor="hover:bg-orange-600"
+
+          label="Modeling"
         />
 
-
         <NavItem
-          onClick={() =>
-            contactRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          bgColor="hover:border-orange-600"
-          onHover={setHoveredLink}
-          hoveredLink={hoveredLink}
-          label="contact"
+          href="/contact"
+          bgColor="hover:bg-yellow-300"
+
+          label="Contact"
         />
       </nav>
-      <div className="w-screen bg-white/95" ref={synopsisRef}>
-        <div className="text-black text-left m-auto w-full md:flex relative bg-white p-4 pt-0">
-          <div className=" md:flex flex-col flex-1 ">
-            <img src="DominiqueStar.jpg" alt="Dominique Star" />
-          </div>
-          <div className="md:flex flex-col flex-1 p-8 md:p-12 space-y-4">
-            <h2>RECENT WORK</h2>
-            <ul>
-              <li><b>2025</b></li>
-              <li>Summer Intensive at the <b>Royal Academy of Dramatic Art (RADA)</b></li>
-              <li>Pokemon Go campaign (how 2016)</li>
-              <li><b>2024</b></li>
-              <li>Music/Theatre: Perchance to Dream Concept Album (Radiohead + Hamlet) - <a href="https://pcd.fyi" target="_blank"><u>Listen here -></u></a></li>
-              <li>Television: <b>Doctor Odyssey</b> (her network debut!)</li>
-              <li>Film: V/H/S Beyond</li>
-              <li><b>2023</b></li>
-              <li>Theatre: Co-created, produced, and directed a groundbreaking adaptation of
-              Hamlet told through the music of Radiohead. <a href="https://concept.perchancetodream.org/" target="_blank">
-                <u>Photos & more here -></u>
-              </a></li>
-              <li>Film: Starred as Jamie in Split, a USC MFA thesis now making the festival rounds.</li>
-            </ul>
-
-            <h2>ABOUT</h2>
-            <p>
-              Born in Connecticut but raised in Rhode Island, Dominique is a creative soul with the heart of a poet and the work ethic of someone who literally does not know how to chill out and do nothing. Her favorite catchphrase is "how hard can it be?"
-            </p>
-            <p>
-              She is represented by Citizen Skull Management theatrically and
-                Wildflowers Agency
-              for modelling and commercials.
-            </p>
-            <p>Also, she knows how to code & built this website (take that, squarespace).</p>
-            <img className="glitch glitch-rgb glitch-diagonal glitch-flicker"
-              src="DomGuitars.jpg"
-              alt="Dominique Star Headshot"
-            />
-
-
+          <div className="w-2/3 m-auto text-center">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route exact path="/music" element={<Videos />} />
+            <Route exact path="/modeling" element={<Modeling />} />
+            <Route exact path="/acting" element={<Acting />} />
+            <Route exact path="/contact" element={<Contact />} />
+          </Routes>
           </div>
         </div>
       </div>
 
-      <div className="w-screen bg-white/95 text-center py-10" ref={conceptRef}>
-        <h2>Acting Reel</h2>
-        <div className="m-auto mb-10 w-full md:w-1/2 h-full max-w-[800px] text-center">
-          <iframe
-            className="youtube-video"
-            src="https://www.youtube.com/embed/adgo3ostrAQ"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            loading="lazy"
-          ></iframe>
-        </div>
-
-        <h2>Here are all the instruments she can play in one convenient video:</h2>
-        <div className="m-auto mb-10 w-full md:w-1/2 h-full max-w-[800px] text-center">
-          <iframe
-            className="youtube-video"
-            src="https://www.youtube.com/embed/DnQZBw7ePNU?si=2-2kLcK-VaCYGfP-"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-      <div className="relative w-screen bg-white/95 pb-10" ref={photoRef}>
-        <h2>Here is her face:</h2>
-        <div className="grid md:grid-cols-3 mb-8  m-auto gap-8">
-          <div>
-            <img
-              src="DominiqueStarHeadshot1.jpg?v=11"
-              alt="Dominique Star Headshot"
-            />
-          </div>
-          <div>
-            <img
-              src="DominiqueStarHeadshot2.jpg?v=3"
-              alt="Dominique Star Headshot"
-            />
-          </div>
-          <div>
-            <img
-              src="DominiqueStarHeadshot3.jpg?v=3"
-              alt="Dominique Star Headshot"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div className="relative w-screen bg-white/95 pb-10" ref={contactRef}>
+      <div className="relative w-screen bg-white/95 pb-10">
         <h2 className="mb-4">Contact </h2>
 
         <div className="pb-10 space-y-2 underline-offset-4">
@@ -212,7 +140,328 @@ function App() {
         </div>
       </div>
     </div>
+    </React.Fragment></Router>
   );
 }
 
+export function Home(){
+  return (
+    <div className="px-8 mt-4 space-y-4 md:w-2/3 m-auto text-left">
+            <p>
+            Most recently seen on Ryan Murphy's Doctor Odyssey, Dominique Star is a multi-hyphenate actor-musician-model-writer with the heart of a poet and the work ethic of someone who literally does not know how to chill out and do nothing. Her favorite catchphrase is "how hard can it be?"
+            </p>
+            <p>
+              She is represented by Citizen Skull Management and Wildflowers Agency.
+            </p>
+            <iframe
+              className="youtube-video"
+              src="https://www.youtube.com/embed/AaLxC87yG9E"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              loading="lazy"
+            ></iframe>
+            <img className=""
+              src="DomGuitars.jpg"
+              alt="Dominique Star Headshot"
+            /></div>
+          )
+}
+
+export function Videos(){
+return(<div className="space-y-6">
+<h2>Live Performances</h2>
+  <div className="grid md:grid-cols-2 mb-8 m-auto gap-8">
+     <iframe
+          className="youtube-video"
+          src="https://www.youtube.com/embed/EfPfX2_XAXk"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          loading="lazy"
+        ></iframe>
+  <iframe
+            className="youtube-video"
+            src="https://www.youtube.com/embed/DnQZBw7ePNU?si=2-2kLcK-VaCYGfP-"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+            <iframe
+            className="youtube-video"
+            src="https://www.youtube.com/embed/ZYtzXJ9D3eo"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+        <iframe
+          className="youtube-video"
+          src="https://www.youtube.com/embed/F7lxNozXy5o"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          loading="lazy"
+        ></iframe>
+
+         <div>
+<iframe
+            className="youtube-video"
+            src="https://www.youtube.com/embed/w2SThs5QNtE"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
+          Music & lyrics by Dominique</div>
+<div>
+          <iframe
+            className="youtube-video"
+            src="https://www.youtube.com/embed/2DygzyNLiE0"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
+          Music & lyrics by Dominique</div>
+
+
+</div>
+
+        <h2>Recordings:</h2>
+
+        <div className="grid md:grid-cols-2 mb-8 m-auto gap-8">
+
+
+          <iframe
+            className="youtube-video"
+            src="https://www.youtube.com/embed/AaLxC87yG9E"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
+   <iframe
+            className="youtube-video"
+            src="https://www.youtube.com/embed/FxIYQ2WJZEs"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
+
+
+   <iframe
+            className="youtube-video"
+            src="https://www.youtube.com/embed/aq_Kll3-ld0"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
+
+          <iframe
+            className="youtube-video"
+            src="https://www.youtube.com/embed/7nfTAWALE_s"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
+
+       </div>
+       </div>
+)
+}
+
+export function Contact(){
+  return(<></>)
+
+}
+
+export function Modeling(){
+return(<div className="grid md:grid-cols-3 mb-8  m-auto gap-8">
+
+
+
+
+
+     <img
+      src="/modelling/12.jpeg"
+      alt="Dominique Star Headshot"
+      className="triggerIMAGG"
+    />
+
+     <img
+      src="/modelling/14.jpeg"
+      alt="Dominique Star Headshot"
+      className="triggerIMAGG"
+    />
+
+ <img
+      src="/modelling/15.jpeg"
+      alt="Dominique Star Headshot"
+      className="triggerIMAGG"
+    />
+
+
+<img
+      src="/modelling/16.jpeg"
+      alt="Dominique Star Headshot"
+      className="triggerIMAGG"
+    />
+
+     <img
+      src="/modelling/17.jpeg"
+      alt="Dominique Star Headshot"
+      className="triggerIMAGG"
+    />
+
+     <img
+      src="/modelling/19.jpeg"
+      alt="Dominique Star Headshot"
+      className="triggerIMAGG"
+    />
+
+
+    <img
+      src="/modelling/4.jpeg"
+      alt="Dominique Star Headshot"
+      className="triggerIMAGG"
+    />
+
+
+     <img
+      src="/modelling/5.jpeg"
+      alt="Dominique Star Headshot"
+      className="triggerIMAGG"
+    />
+
+
+     <img
+      src="/modelling/6.jpeg"
+      alt="Dominique Star Headshot"
+      className="triggerIMAGG"
+    />
+
+
+     <img
+      src="/modelling/2.jpeg"
+      alt="Dominique Star Headshot"
+      className="triggerIMAGG"
+    />
+
+     <img
+      src="/modelling/3.jpeg"
+      alt="Dominique Star Headshot"
+      className="triggerIMAGG"
+    />
+
+      <img
+      src="/modelling/10.jpeg"
+      alt="Dominique Star Headshot"
+      className="triggerIMAGG"
+    />
+
+
+     <img
+      src="/modelling/11.jpeg"
+      alt="Dominique Star Headshot"
+      className="triggerIMAGG"
+    />
+
+
+
+     <img
+      src="/modelling/7.jpg"
+      alt="Dominique Star Headshot"
+      className="triggerIMAGG"
+    />
+
+
+     <img
+      src="/modelling/9.jpeg"
+      alt="Dominique Star Headshot"
+      className="triggerIMAGG"
+    />
+
+
+
+
+     <img
+      src="/modelling/18.jpeg"
+      alt="Dominique Star Headshot"
+      className="triggerIMAGG"
+    />
+
+
+
+
+
+
+
+
+
+
+
+</div>)
+}
+
+export function Acting(){
+  return(<div className="space-y-8">
+         <iframe
+          className="youtube-video"
+          src="https://www.youtube.com/embed/adgo3ostrAQ"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          loading="lazy"
+        ></iframe>
+
+<iframe src="https://drive.google.com/file/d/1_u_DvyFNZb5CFiAEtX1mZS-veTWUttpw/preview" width="100%" title="Dominique Star acting resume"
+height="800px" allow="autoplay"></iframe>
+        <div className="grid md:grid-cols-2 mb-8  m-auto gap-8">
+          <div>
+            <img
+              src="DominiqueStarHeadshot1.jpg?v=11"
+              alt="Dominique Star Headshot"
+            />
+          </div>
+          <div>
+            <img
+              src="DominiqueStarHeadshot2.jpg?v=3"
+              alt="Dominique Star Headshot"
+            />
+          </div>
+          <div>
+            <img
+              src="DominiqueStarHeadshot3.jpg?v=3"
+              alt="Dominique Star Headshot"
+            />
+          </div>
+              <div>
+            <img
+              src="DominiqueStarHeadshot4.jpg?v=3"
+              alt="Dominique Star Headshot"
+            />
+          </div>
+        </div>
+
+  </div>)
+}
 export default App;

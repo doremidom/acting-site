@@ -29,3 +29,34 @@ code {
   aspect-ratio: 16 / 9;
   width: 100%;
 }
+
+.splash{
+  background-image: url("/public/DominiqueStar.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ff7373;
+}
+
+
+
+/* vhs css */
+.name {
+       padding: 1em;
+       color: #1c1d19;
+
+       line-height: 1;
+       text-shadow: 0.03rem 0 0.03rem #ea36af, -0.050rem 0 0.03rem #75fa69;
+       letter-spacing: 0.125em;
+}
+
+
+@keyframes textflicker {
+  from {
+    text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+  }
+  to {
+    text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+  }
+}

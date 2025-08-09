@@ -1,14 +1,15 @@
+import { Link } from "react-router-dom";
+
 export default function NavItem(props) {
-  const { onClick, bgColor, label, onHover } = props;
+  const { bgColor, label, href } = props;
+
 
   return (
-    <button
-      onClick={() => onClick()}
-      onMouseEnter={() => onHover(label)}
-      onMouseLeave={() => onHover("")}
-      className={`${bgColor} border-b border-black w-full uppercase bg-white/90 h-full duration-200 text-black text-center pr-4`}
+    <Link
+      to={href}
+      className={`${bgColor} uppercase h-full transition duration-300 px-1`}
     >
       {label}
-    </button>
+    </Link>
   );
 }
