@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import NavItem from "./NavItem";
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -9,6 +9,14 @@ function App() {
   const synopsisRef = useRef();
   const photoRef = useRef();
   const contactRef = useRef();
+
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
 
   return (
@@ -21,10 +29,50 @@ function App() {
               spent several years as a musician in NYC and Paris.
             </p>
       </div> */}
-      <div className="h-screen splash items-center justify-center flex">
-        <div className=" text-[4rem] md:text-[107px] font-medium">
-     DOMINIQUE STAR
-        </div>
+      <div className="h-screen splash flex items-center justify-center" style={{ "--scroll-offset": `${scrollY}px` }}>
+       <svg
+          className="fixed-svg"
+          viewBox="0 0 1200 800"
+          preserveAspectRatio="xMinYMin slice"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <defs>
+             <rect width="100%" height="100%" fill="white" />
+            {/* Text mask — will scroll because it's positioned relative */}
+            <mask id="text-mask" maskUnits="userSpaceOnUse" >
+              <rect width="100%" height="100%" fill="white" />
+              <text
+                x="50%"
+                y="50%"
+                textAnchor="middle"
+                dominantBaseline="middle"
+                fontWeight="800"
+                fontSize="7rem"
+                fill="#242424"
+                className="scrolling-mask-text"
+                paintOrder="stroke"
+              >
+                DOMINIQUE STAR
+              </text>
+            </mask>
+
+            {/* Grayscale filter */}
+            <filter id="toGray">
+              <feColorMatrix type="saturate" values="0" />
+            </filter>
+          </defs>
+
+          {/* Fixed-position grayscale image */}
+          <image
+            href="/bgcolor.jpg"
+            width="1200"
+            height="800"
+            preserveAspectRatio="xMinYMin slice"
+            filter="url(#toGray)"
+            mask="url(#text-mask)"
+          />
+        </svg>
       </div>
 
       <div className="w-screen bg-white/95 relative" ref={synopsisRef}>
