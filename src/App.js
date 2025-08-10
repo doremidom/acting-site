@@ -2,13 +2,11 @@ import logo from "./logo.svg";
 import "./App.css";
 import NavItem from "./NavItem";
 import React, { useRef, useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { ParallaxBanner, ParallaxBannerLayer, ParallaxProvider } from 'react-scroll-parallax';
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
 function App() {
   const conceptRef = useRef();
   const synopsisRef = useRef();
-  const photoRef = useRef();
-  const contactRef = useRef();
 
   const [scrollY, setScrollY] = useState(0);
 
