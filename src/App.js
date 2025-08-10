@@ -470,9 +470,8 @@ export function Acting(){
           loading="lazy"
         ></iframe>
 
-<iframe src="https://drive.google.com/file/d/1_u_DvyFNZb5CFiAEtX1mZS-veTWUttpw/preview" width="100%" title="Dominique Star acting resume"
-height="800px" allow="autoplay"></iframe>
-        <div className="grid md:grid-cols-2 mb-8  m-auto gap-8">
+
+        <div className="grid md:grid-cols-3 mb-8  m-auto gap-8">
           <div>
             <img
               src="DominiqueStarHeadshot1.jpg?v=11"
@@ -491,13 +490,11 @@ height="800px" allow="autoplay"></iframe>
               alt="Dominique Star Headshot"
             />
           </div>
-              <div>
-            <img
-              src="DominiqueStarHeadshot4.jpg?v=3"
-              alt="Dominique Star Headshot"
-            />
-          </div>
+
         </div>
+
+        <iframe src="https://drive.google.com/file/d/1_u_DvyFNZb5CFiAEtX1mZS-veTWUttpw/preview" width="100%" title="Dominique Star acting resume"
+height="800px" allow="autoplay"></iframe>
 
   </div>)
 }
