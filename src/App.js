@@ -3,7 +3,7 @@ import "./App.css";
 import NavItem from "./NavItem";
 import React, { useRef, useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import { ParallaxBanner, ParallaxBannerLayer, ParallaxProvider } from 'react-scroll-parallax';
 function App() {
   const conceptRef = useRef();
   const synopsisRef = useRef();
@@ -20,76 +20,49 @@ function App() {
 
 
   return (
+    <ParallaxProvider>
       <Router>
         <React.Fragment>
     <div className="App">
-      {/* <div className="md:w-1/2 text-left p-4 pb-0">
-          <p>
-              <b>DOMINIQUE STAR</b> is an actor, singer, and musician who splits her time between Los Angeles and London. She attended Columbia University and La Sorbonne and
-              spent several years as a musician in NYC and Paris.
-            </p>
-      </div> */}
-      <div className="h-screen splash flex items-center justify-center" style={{ "--scroll-offset": `${scrollY}px` }}>
-       <svg
-          className="fixed-svg"
-          viewBox="0 0 1200 800"
-          preserveAspectRatio="xMinYMin slice"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          <defs>
-             <rect width="100%" height="100%" fill="white" />
-            {/* Text mask — will scroll because it's positioned relative */}
-            <mask id="text-mask" maskUnits="userSpaceOnUse" >
-              <rect width="100%" height="100%" fill="white" />
-              <text
-                x="50%"
-                y="50%"
-                textAnchor="middle"
-                dominantBaseline="middle"
-                fontWeight="800"
-                fontSize="7rem"
-                fill="#242424"
-                className="scrolling-mask-text"
-                paintOrder="stroke"
-              >
-                DOMINIQUE STAR
-              </text>
-            </mask>
 
-            {/* Grayscale filter */}
-            <filter id="toGray">
-              <feColorMatrix type="saturate" values="0" />
-            </filter>
-          </defs>
+      <div className="h-screen w-screen splash flex" style={{ "--scroll-offset": `${scrollY}px` }}>
+<ParallaxBanner
+  layers={[
+    {
+      image: '/1.jpg',
+      speed: -20,
+    },
+  ]}
+  style={{ aspectRatio: '16 / 9' }}>
+   <div className="absolute inset-0 flex items-center justify-center">
+        <h1 className=" name text-8xl font-bold mix-blend-luminosity mb-8">DOMINIQUE STAR</h1>
+      </div>
+  </ParallaxBanner>
 
-          {/* Fixed-position grayscale image */}
-          <image
-            href="/bgcolor.jpg"
-            width="1200"
-            height="800"
-            preserveAspectRatio="xMinYMin slice"
-            filter="url(#toGray)"
-            mask="url(#text-mask)"
-          />
-        </svg>
       </div>
 
       <div className="w-screen bg-white/95 relative" ref={synopsisRef}>
         <div className="text-black text-left m-auto w-full bg-white p-4 pt-0">
       <nav
-        className={`flex py-4  text-lg font-bold right-0 text-center items-center justify-center space-x-4 `}
+        className={`flex py-4  text-lg font-bold right-0 text-center items-center justify-center space-x-16 `}
       >
-        <div className="flex space-x-1 mr-1 items-center">
+        <div className="flex space-x-1 items-center -mr-8">
             <a href="https://instagram.com/doremidom" target="_blank" rel="noreferrer">
-          <img src="ig.svg"  alt="instagram" className="w-5 h-5 max-w-none hover:fill-white" />
+          <img src="ig.svg"  alt="instagram" className="w-7 h-7 max-w-none hover:fill-white" />
+        </a>
+          <a href="https://www.imdb.com/name/nm11311565/" target="_blank" rel="noreferrer">
+          <img src="im.svg"  alt="imdb" className="w-7 h-7 max-w-none hover:fill-white" />
         </a>
          <a href="https://www.youtube.com/@DominiqueStar" target="_blank" rel="noreferrer">
-          <img src="yt.svg"  alt="youtube" className="w-5 h-5 max-w-none hover:fill-white" />
+          <img src="yt.svg"  alt="youtube" className="w-7 h-7 max-w-none hover:fill-white" />
         </a>
         <a href="https://www.tiktok.com/@Dominique_Star" target="_blank" rel="noreferrer">
-          <img src="tt.svg"  alt="tiktok" className="w-5 h-5 max-w-none hover:fill-white" />
+          <img src="tt.svg"  alt="tiktok" className="w-7 h-7 max-w-none hover:fill-white" />
         </a>
+        <a href="https://open.spotify.com/artist/0cDL6wpZxjT9D6BqZf3tZu?si=Mr-uyh_bQMqvSktrS6r_SQ" target="_blank" rel="noreferrer">
+          <img src="sp.svg"  alt="spotify" className="w-5 h-5 max-w-none hover:fill-white" />
+        </a>
+
         </div>
         <NavItem
           bgColor="hover:bg-blue-600"
@@ -106,7 +79,7 @@ function App() {
           href="/music"
           label="Music"
         />
-<NavItem
+        <NavItem
           href="/acting"
           bgColor="hover:bg-purple-600"
 
@@ -189,15 +162,16 @@ function App() {
       </div>
     </div>
     </React.Fragment></Router>
+    </ParallaxProvider>
   );
 }
 
 export function Home(){
   return (
-    <div className="px-8 mt-4 space-y-4 md:w-2/3 m-auto text-left">
-            <p>
-            Most recently seen on Ryan Murphy's Doctor Odyssey, Dominique Star is a multi-hyphenate actor-musician-model-writer with the heart of a poet and the work ethic of someone who literally does not know how to chill out and do nothing. Her favorite catchphrase is "how hard can it be?"
-            </p>
+    <div className="px-8 mt-4 space-y-6 md:w-3/4 m-auto text-left">
+      <b>DOMINIQUE STAR</b> is an actor, singer, and musician who splits her time between Los Angeles and London. Dominique was most recently seen on screen in <b>Ryan Murphy's "Doctor Odyssey"</b>, and on stage as <b>Ophelia</b> in a groundbreaking <b>Hamlet x Radiohead </b> musical.
+
+
             <p>
               She is represented by Citizen Skull Management and Wildflowers Agency.
             </p>
@@ -210,17 +184,27 @@ export function Home(){
               allowFullScreen
               loading="lazy"
             ></iframe>
-            <img className=""
-              src="DomGuitars.jpg"
+            <div className="grid grid-cols-2 gap-2">
+              <img className=""
+              src="smile.jpg"
               alt="Dominique Star Headshot"
-            /></div>
+            />
+            <img className=""
+              src="/modelling/6.jpeg"
+              alt="Dominique Star Headshot"
+            />
+
+            </div>
+
+            </div>
           )
 }
 
 export function Videos(){
 return(<div className="space-y-6">
 <h2>Live Performances</h2>
-  <div className="grid md:grid-cols-2 mb-8 m-auto gap-8">
+  <div className="grid md:grid-cols-2 mb-8 m-auto gap-8 text-left">
+    <div>
      <iframe
           className="youtube-video"
           src="https://www.youtube.com/embed/EfPfX2_XAXk"
@@ -230,6 +214,9 @@ return(<div className="space-y-6">
           allowFullScreen
           loading="lazy"
         ></iframe>
+        Rock/Musical Theatre
+        </div>
+        <div>
   <iframe
             className="youtube-video"
             src="https://www.youtube.com/embed/DnQZBw7ePNU?si=2-2kLcK-VaCYGfP-"
@@ -239,7 +226,10 @@ return(<div className="space-y-6">
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
+          Pop / Alternative
+          </div>
 
+<div>
             <iframe
             className="youtube-video"
             src="https://www.youtube.com/embed/ZYtzXJ9D3eo"
@@ -249,7 +239,9 @@ return(<div className="space-y-6">
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
-
+          Folk/Acoustic
+</div>
+       <div>
         <iframe
           className="youtube-video"
           src="https://www.youtube.com/embed/F7lxNozXy5o"
@@ -259,6 +251,8 @@ return(<div className="space-y-6">
           allowFullScreen
           loading="lazy"
         ></iframe>
+        Musical Theatre
+        </div>
 
          <div>
 <iframe
@@ -270,7 +264,7 @@ return(<div className="space-y-6">
             allowFullScreen
             loading="lazy"
           ></iframe>
-          Music & lyrics by Dominique</div>
+          Indie Pop: Music & lyrics by Dominique</div>
 <div>
           <iframe
             className="youtube-video"
@@ -281,7 +275,7 @@ return(<div className="space-y-6">
             allowFullScreen
             loading="lazy"
           ></iframe>
-          Music & lyrics by Dominique</div>
+          Indie Pop: Music & lyrics by Dominique</div>
 
 
 </div>
@@ -302,7 +296,7 @@ return(<div className="space-y-6">
           ></iframe>
    <iframe
             className="youtube-video"
-            src="https://www.youtube.com/embed/FxIYQ2WJZEs"
+            src="https://www.youtube.com/embed/FxIYQ2WJZEs?si=heMGQaCA-75zYR7H&amp;start=151"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -323,7 +317,7 @@ return(<div className="space-y-6">
 
           <iframe
             className="youtube-video"
-            src="https://www.youtube.com/embed/7nfTAWALE_s"
+            src="https://www.youtube.com/embed/gMdwXDEa-EU"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -337,7 +331,9 @@ return(<div className="space-y-6">
 }
 
 export function Contact(){
-  return(<></>)
+  return(<>
+
+</>)
 
 }
 

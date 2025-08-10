@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        montserrat: ['"Inter"'],
+        inter: ['"Inter"'],
+      },
+      colors: {
+        black: '#1c1c1c', // Replace with your desired hex value
       },
     },
   },

@@ -7,7 +7,7 @@ export default function NavItem(props) {
   return (
     <Link
       to={href}
-      className={`${bgColor} uppercase h-full transition duration-300 px-1`}
+      className={`hover:bg-black hover:text-white uppercase h-full transition duration-300 px-1`}
     >
       {label}
     </Link>

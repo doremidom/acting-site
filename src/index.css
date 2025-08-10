@@ -4,7 +4,6 @@
 
 body {
   background-color: white;
-  color: black;
   margin: 0;
   font-family: "Inter", -apple-system, BlinkMacSystemFont,
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
@@ -31,12 +30,16 @@ code {
 }
 
 .splash{
-  /* background-image: url("/public/bgcolor.jpg"); */
+  background-image: url("/public/1.jpg");
   background-attachment: fixed;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size:  cover;
   color: white;
+}
+
+.name{
+  color: #00ff87;
 }
 
  .splash svg {
@@ -67,8 +70,8 @@ code {
 .fixed-svg {
   position: fixed;
   inset: 0;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   pointer-events: none;
 }
 
