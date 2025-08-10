@@ -34,8 +34,8 @@ function App() {
     },
   ]}
   style={{ aspectRatio: '16 / 9' }}>
-   <div className="absolute inset-0 flex items-center justify-center">
-        <h1 className=" name text-8xl font-bold mix-blend-luminosity mb-8">DOMINIQUE STAR</h1>
+   <div className="absolute inset-0 flex items-end md:items-center justify-center">
+        <h1 className="name text-[10vw] md:text-[6vw] font-bold mix-blend-luminosity mb-8">DOMINIQUE STAR</h1>
       </div>
   </ParallaxBanner>
 
@@ -44,9 +44,9 @@ function App() {
       <div className="w-screen bg-white/95 relative" ref={synopsisRef}>
         <div className="text-black text-left m-auto w-full bg-white p-4 pt-0">
       <nav
-        className={`flex py-4  text-lg font-bold right-0 text-center items-center justify-center space-x-16 `}
+        className={`md:flex md:space-x-8 py-4 text-lg font-bold right-0 text-center items-center justify-center `}
       >
-        <div className="flex space-x-1 items-center -mr-8">
+        <div className="flex space-x-1 items-center">
             <a href="https://instagram.com/doremidom" target="_blank" rel="noreferrer">
           <img src="ig.svg"  alt="instagram" className="w-7 h-7 max-w-none hover:fill-white" />
         </a>
@@ -99,7 +99,7 @@ function App() {
           label="Contact"
         />
       </nav>
-          <div className="w-2/3 m-auto text-center">
+          <div className="md:w-2/3 m-auto text-center">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route exact path="/music" element={<Videos />} />
@@ -168,13 +168,8 @@ function App() {
 
 export function Home(){
   return (
-    <div className="px-8 mt-4 space-y-6 md:w-3/4 m-auto text-left">
+    <div className="md:px-8 mt-4 space-y-6 md:w-3/4 m-auto text-left">
       <b>DOMINIQUE STAR</b> is an actor, singer, and musician who splits her time between Los Angeles and London. Dominique was most recently seen on screen in <b>Ryan Murphy's "Doctor Odyssey"</b>, and on stage as <b>Ophelia</b> in a groundbreaking <b>Hamlet x Radiohead </b> musical.
-
-
-            <p>
-              She is represented by Citizen Skull Management and Wildflowers Agency.
-            </p>
             <iframe
               className="youtube-video"
               src="https://www.youtube.com/embed/AaLxC87yG9E"
