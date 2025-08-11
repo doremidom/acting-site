@@ -466,13 +466,13 @@ export function Acting(){
         <div className="grid md:grid-cols-3 mb-8  m-auto gap-8">
           <div>
             <img
-              src="DominiqueStarHeadshot1.jpg?v=11"
+              src="DominiqueStarHeadshot1.jpeg?v=11"
               alt="Dominique Star Headshot"
             />
           </div>
           <div>
             <img
-              src="DominiqueStarHeadshot2.jpg?v=3"
+              src="DominiqueStarHeadshot2.jpeg?v=3"
               alt="Dominique Star Headshot"
             />
           </div>
