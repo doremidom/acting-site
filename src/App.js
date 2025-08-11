@@ -33,7 +33,7 @@ function App() {
   ]}
   style={{ aspectRatio: '16 / 9' }}>
    <div className="absolute inset-0 flex items-end md:items-center justify-center">
-        <h1 className="name text-[10vw] md:text-[6vw] font-bold mix-blend-luminosity mb-8">DOMINIQUE STAR</h1>
+        <h1 className="name text-[#ff9f9f] md:text-[#00ff87] text-[10vw] md:text-[6vw] font-bold mix-blend-luminosity mb-8">DOMINIQUE STAR</h1>
       </div>
   </ParallaxBanner>
 
@@ -42,7 +42,7 @@ function App() {
       <div className="w-screen bg-white/95 relative" ref={synopsisRef}>
         <div className="text-black text-left m-auto w-full bg-white p-4 pt-0">
       <nav
-        className={`md:flex md:space-x-8 py-4 text-lg font-bold right-0 text-center items-center justify-center `}
+        className={`md:flex md:space-x-8 py-4 text-[4vw] md:text-lg font-bold right-0 text-center items-center justify-center `}
       >
         <div className="flex space-x-1 items-center">
             <a href="https://instagram.com/doremidom" target="_blank" rel="noreferrer">
