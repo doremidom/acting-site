@@ -422,7 +422,7 @@ return(<div className="grid md:grid-cols-3 mb-8  m-auto gap-8">
     />
 
      <img
-      src="/modelling/10.jpeg"
+      src="/modelling/10.jpeg?version=2"
       alt="Dominique Star Headshot"
       className="triggerIMAGG"
     />
