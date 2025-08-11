@@ -408,21 +408,6 @@ return(<div className="grid md:grid-cols-3 mb-8  m-auto gap-8">
       className="triggerIMAGG"
     />
 
-      <img
-      src="/modelling/10.jpeg"
-      alt="Dominique Star Headshot"
-      className="triggerIMAGG"
-    />
-
-
-     <img
-      src="/modelling/11.jpeg"
-      alt="Dominique Star Headshot"
-      className="triggerIMAGG"
-    />
-
-
-
      <img
       src="/modelling/7.jpg"
       alt="Dominique Star Headshot"
@@ -435,6 +420,13 @@ return(<div className="grid md:grid-cols-3 mb-8  m-auto gap-8">
       alt="Dominique Star Headshot"
       className="triggerIMAGG"
     />
+
+     <img
+      src="/modelling/10.jpeg"
+      alt="Dominique Star Headshot"
+      className="triggerIMAGG"
+    />
+
 
 
 
