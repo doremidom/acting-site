@@ -167,7 +167,7 @@ function App() {
 export function Home(){
   return (
     <div className="md:px-8 mt-4 space-y-6 md:w-3/4 m-auto text-left">
-      DOMINIQUE STAR is an actor & musician who splits her time between Los Angeles and London. She was most recently seen on screen in <i>Ryan Murphy's "Doctor Odyssey"</i>, and on stage as <i>Ophelia</i> in a groundbreaking <i>Hamlet x Radiohead </i> musical, Perchance to Dream.
+      DOMINIQUE STAR is an actor & musician who splits her time between Los Angeles and London. In 2025 she trained at RADA as part of their Advanced Acting for Camera Summer intensive. She was most recently seen on screen in <i>Ryan Murphy's "Doctor Odyssey"</i>, and on stage as <i>Ophelia</i> in a groundbreaking <i>Hamlet x Radiohead </i> musical, Perchance to Dream.
             <iframe
               className="youtube-video"
               src="https://www.youtube.com/embed/AaLxC87yG9E"
