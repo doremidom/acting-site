@@ -128,14 +128,6 @@ function App() {
             >
               IMDB
             </a>{" "}
-            <a
-              href="https://resumes.actorsaccess.com/dominiquestar"
-              rel="noreferrer"
-              target="_blank"
-              className="underline"
-            >
-              Actors Access
-            </a>
           </p>
           <p>
             Social:{" "}
@@ -289,7 +281,7 @@ return(<div className="space-y-6">
           ></iframe>
    <iframe
             className="youtube-video"
-            src="https://www.youtube.com/embed/FxIYQ2WJZEs?si=heMGQaCA-75zYR7H&amp;start=151"
+            src="https://www.youtube.com/embed/LSNu_B7FFGE?si=NV6f4lk6Pjq2QV1m&amp;start=151"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
