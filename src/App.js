@@ -446,7 +446,7 @@ export function Acting(){
   return(<div className="space-y-8">
          <iframe
           className="youtube-video"
-          src="https://www.youtube.com/embed/adgo3ostrAQ"
+          src="https://www.youtube.com/embed/xMbrb_21RyQ"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
