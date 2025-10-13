@@ -453,6 +453,15 @@ export function Acting(){
           allowFullScreen
           loading="lazy"
         ></iframe>
+          <iframe
+          className="youtube-video"
+          src="https://www.youtube.com/embed/I0aP62x_Ie0 "
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          loading="lazy"
+        ></iframe>
 
 
         <div className="grid md:grid-cols-3 mb-8  m-auto gap-8">
