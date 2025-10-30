@@ -189,6 +189,18 @@ export function Videos(){
 return(<div className="space-y-6">
 <h2>Live Performances</h2>
   <div className="grid md:grid-cols-2 mb-8 m-auto gap-8 text-left">
+      <div>
+        <iframe
+              className="youtube-video"
+              src="https://youtube.com/embed/mgRjF9jVplg"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              loading="lazy"
+            ></iframe>
+            Musical Theatre
+          </div>
     <div>
      <iframe
           className="youtube-video"
@@ -199,7 +211,7 @@ return(<div className="space-y-6">
           allowFullScreen
           loading="lazy"
         ></iframe>
-        Rock/Musical Theatre
+        Rock
         </div>
         <div>
   <iframe
@@ -238,18 +250,6 @@ return(<div className="space-y-6">
         ></iframe>
         Musical Theatre
         </div>
-
-         <div>
-<iframe
-            className="youtube-video"
-            src="https://www.youtube.com/embed/w2SThs5QNtE"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            loading="lazy"
-          ></iframe>
-          Indie Pop: Music & lyrics by Dominique</div>
 <div>
           <iframe
             className="youtube-video"
