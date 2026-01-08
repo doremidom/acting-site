@@ -45,7 +45,7 @@ function App() {
         className={`md:flex md:space-x-8 py-4 text-[4vw] md:text-lg font-bold right-0 text-center items-center justify-center `}
       >
         <div className="flex space-x-1 items-center">
-            <a href="https://instagram.com/doremidom" target="_blank" rel="noreferrer">
+            <a href="https://instagram.com/dominiquestar__" target="_blank" rel="noreferrer">
           <img src="ig.svg"  alt="instagram" className="w-7 h-7 max-w-none hover:fill-white" />
         </a>
           <a href="https://www.imdb.com/name/nm11311565/" target="_blank" rel="noreferrer">
