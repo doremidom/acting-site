@@ -69,15 +69,6 @@ function App() {
           label="Home"
         />
         <NavItem
-          onClick={() =>
-            conceptRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          bgColor="hover:bg-green-600"
-
-          href="/music"
-          label="Music"
-        />
-        <NavItem
           href="/acting"
           bgColor="hover:bg-purple-600"
 
