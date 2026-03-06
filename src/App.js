@@ -123,7 +123,7 @@ function App() {
           <p>
             Social:{" "}
             <a
-              href="https://www.instagram.com/doremidom/"
+              href="https://www.instagram.com/dominiquestar__/"
               rel="noreferrer"
               target="_blank"
               className="underline"
@@ -150,7 +150,7 @@ function App() {
 export function Home(){
   return (
     <div className="md:px-8 mt-4 space-y-6 md:w-3/4 m-auto text-left">
-      DOMINIQUE STAR is an actor & musician who splits her time between Los Angeles and London. In 2025 she trained at RADA as part of their Advanced Acting for Camera Summer intensive. She was most recently seen on screen in <i>Ryan Murphy's "Doctor Odyssey"</i>, and on stage as <i>Ophelia</i> in a groundbreaking <i>Hamlet x Radiohead </i> musical, Perchance to Dream.
+      DOMINIQUE STAR is an actor & musician who splits her time between Los Angeles and London. She was most recently seen on screen as Nurse Vivi in <i>The Pitt</i> on HBO Max, and on stage as <i>Ophelia</i> in a groundbreaking <i>Hamlet x Radiohead </i> musical, Perchance to Dream.
             <iframe
               className="youtube-video"
               src="https://www.youtube.com/embed/AaLxC87yG9E"
@@ -435,7 +435,7 @@ return(<div className="grid md:grid-cols-3 mb-8  m-auto gap-8">
 
 export function Acting(){
   return(<div className="space-y-8">
-         <iframe
+         {/* <iframe
           className="youtube-video"
           src="https://www.youtube.com/embed/xMbrb_21RyQ"
           title="YouTube video player"
@@ -452,7 +452,7 @@ export function Acting(){
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
           loading="lazy"
-        ></iframe>
+        ></iframe> */}
 
 
         <div className="grid md:grid-cols-3 mb-8  m-auto gap-8">
@@ -477,8 +477,8 @@ export function Acting(){
 
         </div>
 
-        <iframe src="https://drive.google.com/file/d/1_u_DvyFNZb5CFiAEtX1mZS-veTWUttpw/preview" width="100%" title="Dominique Star acting resume"
-height="800px" allow="autoplay"></iframe>
+        {/* <iframe src="https://drive.google.com/file/d/1_u_DvyFNZb5CFiAEtX1mZS-veTWUttpw/preview" width="100%" title="Dominique Star acting resume"
+height="800px" allow="autoplay"></iframe> */}
 
   </div>)
 }
